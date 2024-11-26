@@ -1,357 +1,814 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>MITR Hospital- Our Facilities</title>
-           <!-- Favicon icon -->
-    <link rel="icon" href="../Img/logo.png" type="img/png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITR Hospital- Our Facilities</title>
+  <!-- Favicon icon -->
+  <link rel="icon" href="../Img/logo.png" type="img/png" />
 
-    <!-- Font awsome icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Font awsome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Roboto font for project -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Roboto font for project -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- tailwind css link -->
+  <!-- tailwind css link -->
 
-    <script>
-      /** @type {import('tailwindcss').Config} */
-      module.exports = {
-        theme: {
-          extend: {
-            fontFamily: {
-              roboto: ["Roboto", "sans-serif"], // Add Roboto to your font list
-            },
+  <script>
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      theme: {
+        extend: {
+          fontFamily: {
+            roboto: ["Roboto", "sans-serif"], // Add Roboto to your font list
           },
         },
-        plugins: [],
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      },
+      plugins: [],
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-          <header class="bg-[#E8F2FF] text-gray-400  ">
-                    <div
-                      class="container mx-auto px-4 py-4 flex items-center justify-between"
-                    >
-                      <!-- Logo -->
-                      <div class="text-2xl font-bold">
-                        <img src="../Img/logo.png" alt="Logo" class="w-[50%]" />
-                      </div>
-                
-                      <!-- Navbar -->
-                      <nav class="hidden md:flex space-x-6 text-lg items-center">
-                        <!-- Links -->
-                
-                       <!-- Home  -->
-                        <a
-                          href="../html/index.html"
-                          class=" font-roboto font-semibold"
-                          >Home</a
-                        >
-                
-                        <!-- Dropdown: About Us -->
-                        <div class="relative group">
-                          <button
-                            class="hover:text-[#1B528F] font-semibold flex items-center"
-                          >
-                            About Us <i class="fa-solid fa-angle-down ml-1"></i>
-                          </button>
-                          <div
-                            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
-                          >
-                            <a
-                              href="../html/About.html"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Story of MTR</a
-                            >
-                            <a
-                              href="./Managment.html"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Management Team</a
-                            >
-                          </div>
-                        </div>
-                
-                        <!-- Dropdown: Specialities -->
-                        <div class="relative group">
-                          <a href="../html/Specialities.html"
-                            class="hover:text-[#1B528F] font-semibold flex items-center"
-                          >
-                            Specialities <i class="fa-solid fa-angle-down ml-1"></i>
-                          </a>
-                          <div
-                            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
-                          >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Urology</a
-                            >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Robotic Surgery Centre</a
-                            >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Pediatric Surgery</a
-                            >
-                          </div>
-                        </div>
-                
-                        <!-- facilities -->
-                        <div class="relative group">
-                          <a  href="../html/facilities.html" class="text-[#1B528F] font-semibold">
-                            Our Facilities
-                            <i class="fa-solid fa-angle-down"></i>
-                          </a>
-                          <!-- Dropdown -->
-                          <div
-                            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
-                          >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Urology</a
-                            >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Robotic Surgery Centre</a
-                            >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Pediatric Urology & Pediatric Surgery</a
-                            >
-                          </div>
-                        </div>
-                
-                        <!-- Doctor -->
-                        <a
-                          href="../html/Doctor.html"
-                          class="hover:text-[#1B528F] font-semibold"
-                          >Our Doctors</a
-                        >
-                        <!-- Media  -->
-                        <a
-                          href="../html/media.html"
-                          class="hover:text-[#1B528F] font-semibold"
-                          >Media</a
-                        >
-                        <!-- Studies -->
-                        <div class="relative group">
-                          <a href="../html/case.html" class="hover:text-[#1B528F] font-semibold">
-                            Cash Studies
-                            <i class="fa-solid fa-angle-down"></i>
-                          </a>
-                          <!-- Dropdown -->
-                          <div
-                            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
-                          >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Story of MTR</a
-                            >
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                              >Management Team</a
-                            >
-                          </div>
-                        </div>
-                        <!-- Blogs  -->
-                        <a href="../html/blog.html" class="hover:text-[#1B528F] font-semibold"
-                          >Blogs</a
-                        >
-                      </nav>
-                
-                      <!-- Button -->
-                      <button
-                        class="hidden md:block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-[17px] font-semibold text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-                      >
-                        <a href="../html/contact.html"
-                          >Contact Us <i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </button>
-                
-                      <!-- Hamburger Menu -->
-                      <button
-                        id="menu-toggle"
-                        class="md:hidden text-2xl text-black focus:outline-none"
-                      >
-                        <i class="fa-solid fa-bars"></i>
-                      </button>
-                    </div>
-                
-                    <!-- Mobile Menu -->
-                    <div id="mobile-menu" class="hidden md:hidden bg-[#E8F2FF] p-4">
-                
-                      <!-- Home -->
-                      <a
-                        href="../html/index.html"
-                        class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >Home</a
-                      >
-                      <!-- About -->
-                      <div class="relative">
-                        <button
-                          class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >
-                          About Us
-                          <i class="fa-solid fa-angle-down ml-1"></i>
-                        </button>
-                        <div class="mt-2 pl-6">
-                          <a
-                            href="../html/About.html"
-                            class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Story of MTR</a
-                          >
-                          <a
-                            href="./Managment.html"
-                            class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Management Team</a
-                          >
-                        </div>
-                      </div>
-                
-                      <!-- Specialities -->
-                      <div class="relative">
-                        <a  href="../html/Specialities.html"
-                          class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >
-                          Specialities
-                          <i class="fa-solid fa-angle-down ml-1"></i>
-                        </a>
-                        <div class="mt-2 pl-6">
-                          <a href="#" class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Urology</a
-                          >
-                          <a href="#" class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Robotic Surgery Centre</a
-                          >
-                          <a href="#" class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Pediatric Surgery</a
-                          >
-                        </div>
-                      </div>
-                
-                       <!-- Facilities -->
-                       <div class="relative">
-                        <button
-                          class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >
-                          Our Facilities
-                          <i class="fa-solid fa-angle-down ml-1"></i>
-                        </button>
-                        <div class="mt-2 pl-6">
-                          <a
-                            href="../html/About.html"
-                            class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Story of MTR</a
-                          >
-                          <a
-                            href="./Managment.html"
-                            class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Management Team</a
-                          >
-                        </div>
-                      </div>
-                
-                      <!-- Our Doctors -->
-                      <a
-                        href="../html/Doctor.html"
-                        class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >Our Doctors</a
-                      >
-                      <!-- Media -->
-                      <a
-                        href="../html/media.html"
-                        class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >Media</a
-                      >
-                        <!-- case Studeis -->
-                      <div class="relative">
-                        <button
-                          class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >
-                          Cash Studies
-                          <i class="fa-solid fa-angle-down ml-1"></i>
-                        </button>
-                        <div class="mt-2 pl-6">
-                          <a
-                            href="../html/About.html"
-                            class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Story of MTR</a
-                          >
-                          <a
-                            href="./Managment.html"
-                            class="block py-2 text-sm hover:text-[#1B528F]"
-                            >Management Team</a
-                          >
-                        </div>
-                      </div>
-                
-                      <!-- Blogs -->
-                      <a
-                        href="../html/blog.html"
-                        class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
-                        >Blogs</a
-                      >
-                    </div>
-                  </header>
+  <header class="bg-[#E8F2FF] text-gray-400  ">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">
+        <img src="../Img/logo.png" alt="Logo" class="w-[50%]" />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="hidden md:flex space-x-6 text-lg items-center">
+        <!-- Links -->
+
+        <!-- Home  -->
+        <a href="../html/index.html" class=" font-roboto font-semibold">Home</a>
+
+        <!-- Dropdown: About Us -->
+        <div class="relative group">
+          <button class="hover:text-[#1B528F] font-semibold flex items-center">
+            About Us <i class="fa-solid fa-angle-down ml-1"></i>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200">
+            <a href="../html/About.html" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Story of MTR</a>
+            <a href="./Managment.html" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Management Team</a>
+          </div>
+        </div>
+
+        <!-- Dropdown: Specialities -->
+        <div class="relative group">
+          <a href="../html/Specialities.html" class="hover:text-[#1B528F] font-semibold flex items-center">
+            Specialities <i class="fa-solid fa-angle-down ml-1"></i>
+          </a>
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200">
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Urology</a>
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Robotic Surgery Centre</a>
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Pediatric Surgery</a>
+          </div>
+        </div>
+
+        <!-- facilities -->
+        <div class="relative group">
+          <a href="../html/facilities.html" class="text-[#1B528F] font-semibold">
+            Our Facilities
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <!-- Dropdown -->
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200">
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Urology</a>
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Robotic Surgery Centre</a>
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Pediatric Urology & Pediatric
+              Surgery</a>
+          </div>
+        </div>
+
+        <!-- Doctor -->
+        <a href="../html/Doctor.html" class="hover:text-[#1B528F] font-semibold">Our Doctors</a>
+        <!-- Media  -->
+        <a href="../html/media.html" class="hover:text-[#1B528F] font-semibold">Media</a>
+        <!-- Studies -->
+        <div class="relative group">
+          <a href="../html/case.html" class="hover:text-[#1B528F] font-semibold">
+            Cash Studies
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <!-- Dropdown -->
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200">
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Story of MTR</a>
+            <a href="#" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Management Team</a>
+          </div>
+        </div>
+        <!-- Blogs  -->
+        <a href="../html/blog.html" class="hover:text-[#1B528F] font-semibold">Blogs</a>
+      </nav>
+
+      <!-- Button -->
+      <button
+        class="hidden md:block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-[17px] font-semibold text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+        <a href="../html/contact.html">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+      </button>
+
+      <!-- Hamburger Menu -->
+      <button id="menu-toggle" class="md:hidden text-2xl text-black focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#E8F2FF] p-4">
+
+      <!-- Home -->
+      <a href="../html/index.html" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Home</a>
+      <!-- About -->
+      <div class="relative">
+        <button class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold">
+          About Us
+          <i class="fa-solid fa-angle-down ml-1"></i>
+        </button>
+        <div class="mt-2 pl-6">
+          <a href="../html/About.html" class="block py-2 text-sm hover:text-[#1B528F]">Story of MTR</a>
+          <a href="./Managment.html" class="block py-2 text-sm hover:text-[#1B528F]">Management Team</a>
+        </div>
+      </div>
+
+      <!-- Specialities -->
+      <div class="relative">
+        <a href="../html/Specialities.html" class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold">
+          Specialities
+          <i class="fa-solid fa-angle-down ml-1"></i>
+        </a>
+        <div class="mt-2 pl-6">
+          <a href="#" class="block py-2 text-sm hover:text-[#1B528F]">Urology</a>
+          <a href="#" class="block py-2 text-sm hover:text-[#1B528F]">Robotic Surgery Centre</a>
+          <a href="#" class="block py-2 text-sm hover:text-[#1B528F]">Pediatric Surgery</a>
+        </div>
+      </div>
+
+      <!-- Facilities -->
+      <div class="relative">
+        <button class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold">
+          Our Facilities
+          <i class="fa-solid fa-angle-down ml-1"></i>
+        </button>
+        <div class="mt-2 pl-6">
+          <a href="../html/About.html" class="block py-2 text-sm hover:text-[#1B528F]">Story of MTR</a>
+          <a href="./Managment.html" class="block py-2 text-sm hover:text-[#1B528F]">Management Team</a>
+        </div>
+      </div>
+
+      <!-- Our Doctors -->
+      <a href="../html/Doctor.html" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Our Doctors</a>
+      <!-- Media -->
+      <a href="../html/media.html" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Media</a>
+      <!-- case Studeis -->
+      <div class="relative">
+        <button class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold">
+          Cash Studies
+          <i class="fa-solid fa-angle-down ml-1"></i>
+        </button>
+        <div class="mt-2 pl-6">
+          <a href="../html/About.html" class="block py-2 text-sm hover:text-[#1B528F]">Story of MTR</a>
+          <a href="./Managment.html" class="block py-2 text-sm hover:text-[#1B528F]">Management Team</a>
+        </div>
+      </div>
+
+      <!-- Blogs -->
+      <a href="../html/blog.html" class="block px-4 py-2 hover:text-[#1B528F] font-semibold">Blogs</a>
+    </div>
+  </header>
 
 
-                 <section>
-                     <div class="container mx-auto px-4">
-                      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
-                        <!-- Card 1 -->
-                        <div class="relative group ">
-                          <img src="your-image1.jpg" alt="Emergency Department" class="w-full h-48 object-cover rounded-lg">
-                          <div class="absolute inset-0 bg-blue-500 bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg">
-                            <h3 class="text-lg font-bold">Emergency Department</h3>
-                            <p class="text-sm mt-2 px-4">The Emergency Department, often referred to as the ER, is a critical component of any healthcare facility.</p>
-                          </div>
-                        </div>
-                      
-                        <!-- Card 2 -->
-                        <div class="relative group">
-                          <img src="your-image2.jpg" alt="Outpatient Department" class="w-full h-48 object-cover rounded-lg">
-                          <div class="absolute inset-0 bg-blue-500 bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg">
-                            <h3 class="text-lg font-bold">Outpatient Department</h3>
-                            <p class="text-sm mt-2 px-4">Quick and efficient services for non-critical medical needs.</p>
-                          </div>
-                        </div>
-                      
-                        <!-- Card 3 -->
-                        <div class="relative group">
-                          <img src="your-image3.jpg" alt="Robotic Surgery" class="w-full h-48 object-cover rounded-lg">
-                          <div class="absolute inset-0 bg-blue-500 bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg">
-                            <h3 class="text-lg font-bold">Robotic Surgery</h3>
-                            <p class="text-sm mt-2 px-4">Innovative and precise robotic surgical treatments.</p>
-                          </div>
-                        </div>
-                      </div>
-                     </div>
-                 </section>
+
+  <!-- facilities -->
+
+  <section class="py-16">
+
+    <!-- Header -->
+    <div class="flex flex-col items-center">
+      <p class="text-red-700 font-bold underline underline-offset-8 text-center md:text-left">
+        Our Facilities
+      </p>
+      <h2 class="font-semibold  md:text-[35px] text-center">
+        Discover Our Facilities
+      </h2>
+    </div>
+
+
+
+    <div class="container mx-auto px-4">
+
+      <!-- columns-1 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+        <!-- Card 1 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543.png." alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Emergency Department </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">Emergency Department</h3>
+            <p class="text-base mt-2 px-4 text-center">The Emergency Department, often referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (1).png" alt="Emergency Department"
+            class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Outpatient Department</p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">Outpatient Department</h3>
+            <p class="text-base mt-2 px-4 text-center">The Outpatient Department, often referred to as the ER, is a
+              critical Lorem ipsum dolor sit. component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543.png." alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Robotic Surgery </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold"> Robotic Surgery</h3>
+            <p class="text-base mt-2 px-4 text-center">The Emergency Department,Lorem ipsum dolor sit. often referred to
+              as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- columns-2 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+        <!-- Card 1 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (2).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+           In Patient Department </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold"> In Patient Department</h3>
+            <p class="text-base mt-2 px-4 text-center">The  In Patient Department often Lorem ipsum dolor sit. referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img//Rectangle 543 (3).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-20 rounded-lg text-center text-xl group-hover:hidden">
+            ICU </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold ">ICU</h3>
+            <p class="text-base mt-2 px-4 text-center">The ICU  Lorem ipsum dolor sit. often referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (4).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Operation Theater</p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">Operation Theater</h3>
+            <p class="text-base mt-2 px-4 text-center">The Operation Theater, Lorem ipsum dolor sit. often referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- columns-3 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+        <!-- Card 1 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (5).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Endoscopy suite </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">Endoscopy suite</h3>
+            <p class="text-base mt-2 px-4 text-center">The Endoscopy suite, Lorem ipsum dolor sit. often referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543.png" alt="Emergency Department"
+            class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Lithotripsy</p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">Lithotripsy</h3>
+            <p class="text-base mt-2 px-4 text-center">The Lithotripsy, often referred to as the ER, is a
+              critical Lorem ipsum dolor sit. component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (6).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Recovery Rooom </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">  Recovery Rooom</h3>
+            <p class="text-base mt-2 px-4 text-center">The Recovery Rooom,Lorem ipsum dolor sit. often referred to as the ER, is a  critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+      </div>
+      <!-- columns-4 -->
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+        <!-- Card 1 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (7).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+          Pharmacy</p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold"> Pharmacy</h3>
+            <p class="text-base mt-2 px-4 text-center">The  In Pharmacy often Lorem ipsum dolor sit. referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (8).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-20 rounded-lg text-center text-xl group-hover:hidden">
+            Pathology </p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold ">Pathology</h3>
+            <p class="text-base mt-2 px-4 text-center">The Pathology  Lorem ipsum dolor sit. often referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543.png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Urodynamic Studies</p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold">Urodynamic Studies</h3>
+            <p class="text-base mt-2 px-4 text-center">The Urodynamic Studies, Lorem ipsum dolor sit. often referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+      </div>
+
+        <!-- columns-5 -->
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+          <!-- Card 1 -->
+          <div class="relative group  flex flex-col items-center">
+            <img src="../Img/Rectangle 543 (9).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+            <p
+              class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+            Digital X-ray</p>
+  
+            <div
+              class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+              <h3 class="text-lg font-bold"> Digital X-ray</h3>
+              <p class="text-base mt-2 px-4 text-center">The  In Digital X-ray often Lorem ipsum dolor sit. referred to as the ER, is a
+                critical component of any healthcare facility.</p>
+              <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+            </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="relative group  flex flex-col items-center">
+            <img src="../Img/Rectangle 543 (10).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+            <p
+              class="absolute top-[143px] bg-white font-semibold py-1 px-20 rounded-lg text-center text-xl group-hover:hidden">
+              Ultrasound </p>
+  
+            <div
+              class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+              <h3 class="text-lg font-bold ">Ultrasound</h3>
+              <p class="text-base mt-2 px-4 text-center">The Ultrasound  Lorem ipsum dolor sit. often referred to as the ER, is a
+                critical component of any healthcare facility.</p>
+              <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+            </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="relative group  flex flex-col items-center">
+            <img src="../Img//Rectangle 543 (11).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+            <p
+              class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+              2D Echoz</p>
+  
+            <div
+              class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+              <h3 class="text-lg font-bold">U 2D Echoz</h3>
+              <p class="text-base mt-2 px-4 text-center">The  2D Echoz, Lorem ipsum dolor sit. often referred to as the ER, is a
+                critical component of any healthcare facility.</p>
+              <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+            </div>
+          </div>
+        </div>
+
+          <!-- columns-6 -->
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+        <!-- Card 1 -->
+        <div class="relative group  flex flex-col items-center">
+          <img src="../Img/Rectangle 543 (12).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
+          <p
+            class="absolute top-[143px] bg-white font-semibold py-1 px-2 rounded-lg text-center text-xl group-hover:hidden">
+          Uroflowmentry</p>
+
+          <div
+            class="absolute inset-0 bg-[#1B528FCC] bg-opacity-70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg px-8">
+            <h3 class="text-lg font-bold"> Uroflowmentry</h3>
+            <p class="text-base mt-2 px-4 text-center">The  In Uroflowmentry often Lorem ipsum dolor sit. referred to as the ER, is a
+              critical component of any healthcare facility.</p>
+            <button>Read More <i class="fa-solid fa-angles-right"></i> </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+    
+
+        <!-- Card 3 -->
+      
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="py-16 bg-blue-50">
+    <div class="container mx-auto px-6">
+      <!-- Section Header -->
+      <div class="flex flex-col items-center">
+        <p class="text-red-700 font-bold underline underline-offset-8 text-center md:text-left">
+          Meet Our Experienced Doctors
+        </p>
+        <h2 class="font-semibold  md:text-[35px] text-center">
+          Our dedicated doctors <br />team members.
+        </h2>
+      </div>
+
+      <!-- Testimonial Wrapper -->
+      <div class="flex flex-col lg:flex-row  my-8 items-center ">
+        <!-- Left Side: Image and Stats -->
+        <div class="relative w-full lg:w-1/2">
+          <!-- Image -->
+          <img src="../Img/Group 311.png" alt="Doctor" class="rounded-lg w-full h-auto" />
+
+          <!-- Stats Overlay -->
+
+        </div>
+
+        <!-- Right Side: Testimonial Content -->
+        <div class="mt-8  lg:mt-0 gap-6 w-full lg:w-1/2 bg-[#1B528F] text-white rounded-lg p-10 relative">
+          <!-- Quote Icon -->
+          <img src="../Img/dots.png" alt="" class="mb-4">
+          <!-- Testimonial Text -->
+          <p class="text-lg mb-6 font-roboto">
+            Kharghar’s Best Hospital in Navi Mumbai, a premier hospital with all modern
+            technologies, facilities, and specialist doctor’s to make you fit and well-being
+            from any kind of health-related issues. Services are very much satisfactory and
+            all doctors, support staff are very...
+          </p>
+
+          <hr class="my-4  mx-2 border-[#356CA9]">
+          <!-- Testimonial Author -->
+
+          <div class="flex justify-between">
+            <div class="flex items-center space-x-4">
+              <img src="../Img/Ellipse 31.png" alt="Karan Dhawan" class="w-12 h-12 rounded-full" />
+              <div>
+                <h4 class="font-bold">Karan Dhawan</h4>
+                <p class="text-sm">CEO & Founder</p>
+              </div>
+            </div>
+
+            <!-- Rating -->
+            <div class="mt-4">
+              <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+              <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+              <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+              <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+              <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <!-- Navigation Arrows -->
+      <div class="flex justify-center items-center mt-8 space-x-4">
+        <button id="prev"
+          class="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next"
+          class="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="text-[#AEE5FF] py-10 px-4 md:px-12 bg-local bg-left-bottom"
+    style="background-image: url('../Img/Footer-img.png')">
+    <div class="container mx-auto px-14">
+      <div class="flex flex-wrap justify-between">
+        <!-- Logo and Contact Info -->
+        <div class="w-full md:w-1/3 mb-8 md:mb-0">
+          <img src="../Img/logo.png" alt="MITR Hospital" class="mb-4 w-16 md:w-20" />
+          <p class="mb-4 md:pr-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+            nulla risus. Morbi in tellus eget ligula hendrerit vehicula.
+          </p>
+          <div class="flex items-center gap-2 my-3">
+            <img src="../Img/Call.png" alt="" class="w-5" />
+            <p>
+              <a href="tel:9004290790" class="hover:underline text-sm md:text-base">9004290790</a>
+            </p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <img src="../Img/mail (2).png" alt="" class="w-5" />
+            <p>
+              <a href="mailto:frontdesk@mitrhospital.com"
+                class="hover:underline text-sm md:text-base">frontdesk@mitrhospital.com</a>
+            </p>
+          </div>
+          <div class="flex gap-2 my-3">
+            <img src="../Img/location.png" alt="" class="w-6 h-6" />
+            <p class="pr-4 md:pr-8 text-sm md:text-base">
+              Plot:37, Eden Gardens, opposite Harmony International School,
+              Sector-5, Kharghar, Navi Mumbai, Maharashtra 410210
+            </p>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="w-full md:w-2/3 flex flex-wrap">
+          <!-- Repeated Service Columns -->
+          <div class="w-1/2 lg:w-1/3 mb-6">
+            <h3 class="text-lg font-semibold mb-2">Urology & Andrology</h3>
+            <img src="../Img/Line 11.png" alt="" class="mb-2" />
+            <ul class="space-y-1">
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Kidney Stone
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Laser Surgery
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Lithotripsy
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Prostate Enlargement
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Urine Incontinence
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Bladder Cancer
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Kidney Cancer
+              </li>
+            </ul>
+          </div>
+          <!-- Repeat the same structure for other sections -->
+          <div class="w-1/2 lg:w-1/3 mb-6">
+            <h3 class="text-lg font-semibold mb-2">GI + Laparoscopy</h3>
+            <img src="../Img/Line 11.png" alt="" class="mb-2" />
+            <ul class="space-y-1">
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Single Incision Lap Surgery
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Hernia
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Gall Bladder Stone
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Appendicitis
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Piles Surgery
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Intestinal Diseases
+              </li>
+            </ul>
+          </div>
+          <!-- Add additional sections similarly -->
+          <div class="w-1/2 lg:w-1/3 mb-6">
+            <h3 class="text-lg font-semibold mb-2">Pediatric Urology</h3>
+            <img src="../Img/Line 11.png" alt="" class="mb-2" />
+            <ul class="space-y-1">
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Hypospadias
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Antenatal Hydronephrosis
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Undescended Testis
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Hernia In Children
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Vesicoureteral Reflux
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>
+                Pelvi-ureteric Junction (PUJ)
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-1/2 lg:w-1/3 mb-6">
+            <h3 class="text-lg font-semibold mb-2">Gynecology</h3>
+            <img src="../Img/Line 11.png" alt="" class="mb-2" />
+            <ul class="space-y-0">
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Menstrual Irregularities
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Fibroid Uterus
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Uterus Removal
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Ovarian Cyst
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Endometriosis
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Infertility
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Adenomyosis
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>PCOS
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Post Menopausal Bleeding
+              </li>
+            </ul>
+          </div>
+          <div class="w-1/2 lg:w-1/3 mb-6">
+            <h3 class="text-lg font-semibold mb-2">Orthopedic</h3>
+            <img src="../Img/Line 11.png" alt="" class="mb-2" />
+            <ul class="space-y-1">
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Hip Replacement
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Knee Joint Replacement
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Sports Injuries
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Arthritis Treatment
+              </li>
+              <li class="cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Fracture Treatment
+              </li>
+            </ul>
+          </div>
+          <div class="w-1/2 lg:w-1/3 mb-6">
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold mb-2">Gastroenterology</h3>
+              <img src="../Img/Line 11.png" alt="" class="mb-2" />
+              <ul class="space-y-1">
+                <li class="cursor-pointer">
+                  <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Luminal GI
+                </li>
+                <li class="cursor-pointer">
+                  <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Advanced Endoscopy
+                </li>
+                <li class="cursor-pointer">
+                  <i class="fa-solid fa-heart-pulse text-white text-lg pr-2"></i>Hepatology
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <h3 class="text-lg font-semibold mb-2">Social Media </h3>
+              <img src="../Img/Line 11.png" alt="" class="mb-2" />
+              <div class="flex gap-4">
+                <img src="../Img/Group 67.png" alt="">
+                <img src="../Img/Group 68.png" alt="">
+
+                <img src="../Img/Group 71.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700">
+        ↑
+      </button>
+    </div>
+  </footer>
+
+
+  <script src="../js/facilities.js"></script>
 </body>
+
 </html>
