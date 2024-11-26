@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MITR Hospital- Our Facilities</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="../Img/logo.png" type="img/png" />
+
+    <!-- Font awsome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Roboto font for project -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css link -->
+
+    <script>
+      /** @type {import('tailwindcss').Config} */
+      module.exports = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"], // Add Roboto to your font list
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="bg-[#E8F2FF] text-gray-400">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold">
+          <img src="../Img/logo.png" alt="Logo" class="w-[50%]" />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="hidden md:flex space-x-6 text-lg items-center">
+          <!-- Links -->
+
+          <!-- Home  -->
+          <a href="../html/index.html" class="font-roboto font-semibold"
+            >Home</a
+          >
+
+          <!-- Dropdown: About Us -->
+          <div class="relative group">
+            <button
+              class="hover:text-[#1B528F] font-semibold flex items-center"
+            >
+              About Us <i class="fa-solid fa-angle-down ml-1"></i>
+            </button>
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+            >
+              <a
+                href="../html/About.html"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Story of MTR</a
+              >
+              <a
+                href="./Managment.html"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Management Team</a
+              >
+            </div>
+          </div>
+
+          <!-- Dropdown: Specialities -->
+          <div class="relative group">
+            <a
+              href="../html/Specialities.html"
+              class="text-[#1B528F] font-semibold flex items-center"
+            >
+              Specialities <i class="fa-solid fa-angle-down ml-1"></i>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Urology</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Robotic Surgery Centre</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Pediatric Surgery</a
+              >
+            </div>
+          </div>
+
+          <!-- facilities -->
+          <div class="relative group">
+            <a
+              href="../html/facilities.html"
+              class="hover:text-[#1B528F] font-semibold"
+            >
+              Our Facilities
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Urology</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Robotic Surgery Centre</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Pediatric Urology & Pediatric Surgery</a
+              >
+            </div>
+          </div>
+
+          <!-- Doctor -->
+          <a
+            href="../html/Doctor.html"
+            class="hover:text-[#1B528F] font-semibold"
+            >Our Doctors</a
+          >
+          <!-- Media  -->
+          <a
+            href="../html/media.html"
+            class="hover:text-[#1B528F] font-semibold"
+            >Media</a
+          >
+          <!-- Studies -->
+          <div class="relative group">
+            <a
+              href="../html/case.html"
+              class="hover:text-[#1B528F] font-semibold"
+            >
+              Cash Studies
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Story of MTR</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+                >Management Team</a
+              >
+            </div>
+          </div>
+          <!-- Blogs  -->
+          <a href="../html/blog.html" class="hover:text-[#1B528F] font-semibold"
+            >Blogs</a
+          >
+        </nav>
+
+        <!-- Button -->
+        <button
+          class="hidden md:block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-[17px] font-semibold text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        >
+          <a href="../html/contact.html"
+            >Contact Us <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </button>
+
+        <!-- Hamburger Menu -->
+        <button
+          id="menu-toggle"
+          class="md:hidden text-2xl text-black focus:outline-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#E8F2FF] p-4">
+        <!-- Home -->
+        <a
+          href="../html/index.html"
+          class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >Home</a
+        >
+        <!-- About -->
+        <div class="relative">
+          <button
+            class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >
+            About Us
+            <i class="fa-solid fa-angle-down ml-1"></i>
+          </button>
+          <div class="mt-2 pl-6">
+            <a
+              href="../html/About.html"
+              class="block py-2 text-sm hover:text-[#1B528F]"
+              >Story of MTR</a
+            >
+            <a
+              href="./Managment.html"
+              class="block py-2 text-sm hover:text-[#1B528F]"
+              >Management Team</a
+            >
+          </div>
+        </div>
+
+        <!-- Specialities -->
+        <div class="relative">
+          <a
+            href="../html/Specialities.html"
+            class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >
+            Specialities
+            <i class="fa-solid fa-angle-down ml-1"></i>
+          </a>
+          <div class="mt-2 pl-6">
+            <a href="#" class="block py-2 text-sm hover:text-[#1B528F]"
+              >Urology</a
+            >
+            <a href="#" class="block py-2 text-sm hover:text-[#1B528F]"
+              >Robotic Surgery Centre</a
+            >
+            <a href="#" class="block py-2 text-sm hover:text-[#1B528F]"
+              >Pediatric Surgery</a
+            >
+          </div>
+        </div>
+
+        <!-- Facilities -->
+        <div class="relative">
+          <button
+            class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >
+            Our Facilities
+            <i class="fa-solid fa-angle-down ml-1"></i>
+          </button>
+          <div class="mt-2 pl-6">
+            <a
+              href="../html/About.html"
+              class="block py-2 text-sm hover:text-[#1B528F]"
+              >Story of MTR</a
+            >
+            <a
+              href="./Managment.html"
+              class="block py-2 text-sm hover:text-[#1B528F]"
+              >Management Team</a
+            >
+          </div>
+        </div>
+
+        <!-- Our Doctors -->
+        <a
+          href="../html/Doctor.html"
+          class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >Our Doctors</a
+        >
+        <!-- Media -->
+        <a
+          href="../html/media.html"
+          class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >Media</a
+        >
+        <!-- case Studeis -->
+        <div class="relative">
+          <button
+            class="block w-full text-left px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >
+            Cash Studies
+            <i class="fa-solid fa-angle-down ml-1"></i>
+          </button>
+          <div class="mt-2 pl-6">
+            <a
+              href="../html/About.html"
+              class="block py-2 text-sm hover:text-[#1B528F]"
+              >Story of MTR</a
+            >
+            <a
+              href="./Managment.html"
+              class="block py-2 text-sm hover:text-[#1B528F]"
+              >Management Team</a
+            >
+          </div>
+        </div>
+
+        <!-- Blogs -->
+        <a
+          href="../html/blog.html"
+          class="block px-4 py-2 hover:text-[#1B528F] font-semibold"
+          >Blogs</a
+        >
+      </div>
+    </header>
+
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <p class="text-red-500 uppercase font-semibold tracking-widest">Specialities</p>
+          <h2 class="text-3xl font-bold text-gray-800">Areas of Excellence</h2>
+        </div>
+    
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-blue-500 text-white rounded-lg shadow-lg p-6 relative hover:shadow-xl transition">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Urology"
+              class="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <div class="absolute top-4 right-4 bg-white text-blue-500 p-2 rounded-full shadow-md">
+              <i class="fa-solid fa-user-md text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Urology</h3>
+            <p class="text-sm mb-4">
+              The highly developed field of urology treats a variety of genitourinary diseases, including
+              kidney stones, enlarged prostates...
+            </p>
+            <a href="#" class="flex items-center font-semibold hover:underline">
+              Read More
+              <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Pediatric Urology"
+              class="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <div class="absolute top-4 right-4 bg-white text-blue-500 p-2 rounded-full shadow-md">
+              <i class="fa-solid fa-child text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Pediatric Urology</h3>
+            <p class="text-sm mb-4">
+              Pediatric urology is a medical specialty that focuses on the identification and management
+              of children’s urinary tract conditions...
+            </p>
+            <a href="#" class="flex items-center font-semibold text-blue-500 hover:underline">
+              Read More
+              <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Laparoscopic Surgery"
+              class="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <div class="absolute top-4 right-4 bg-white text-blue-500 p-2 rounded-full shadow-md">
+              <i class="fa-solid fa-scalpel text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Laparoscopic Surgery</h3>
+            <p class="text-sm mb-4">
+              General surgery is a surgical specialty that focuses on performing surgical procedures on
+              various parts of the body...
+            </p>
+            <a href="#" class="flex items-center font-semibold text-blue-500 hover:underline">
+              Read More
+              <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Gynecology & Endogynecology"
+              class="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <div class="absolute top-4 right-4 bg-white text-blue-500 p-2 rounded-full shadow-md">
+              <i class="fa-solid fa-female text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Gynecology & Endogynecology</h3>
+            <p class="text-sm mb-4">
+              Pediatric urology is a medical specialty that focuses on the identification and management
+              of children’s urinary tract conditions...
+            </p>
+            <a href="#" class="flex items-center font-semibold text-blue-500 hover:underline">
+              Read More
+              <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+    
+          <!-- Card 5 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Gastroenterology & Hepatology"
+              class="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <div class="absolute top-4 right-4 bg-white text-blue-500 p-2 rounded-full shadow-md">
+              <i class="fa-solid fa-stethoscope text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Gastroenterology & Hepatology</h3>
+            <p class="text-sm mb-4">
+              Pediatric urology is a medical specialty that focuses on the identification and management
+              of children’s urinary tract conditions...
+            </p>
+            <a href="#" class="flex items-center font-semibold text-blue-500 hover:underline">
+              Read More
+              <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+    
+          <!-- Card 6 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Joint Replacement Centre"
+              class="rounded-lg w-full h-40 object-cover mb-4"
+            />
+            <div class="absolute top-4 right-4 bg-white text-blue-500 p-2 rounded-full shadow-md">
+              <i class="fa-solid fa-wheelchair text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Joint Replacement Centre</h3>
+            <p class="text-sm mb-4">
+              General surgery is a surgical specialty that focuses on performing surgical procedures on
+              various parts of the body...
+            </p>
+            <a href="#" class="flex items-center font-semibold text-blue-500 hover:underline">
+              Read More
+              <i class="fa-solid fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
