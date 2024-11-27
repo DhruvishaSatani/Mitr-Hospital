@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MITR Hospital-Case Studies</title>
+    <title>MITR Hospital-Blog</title>
     <!-- Favicon icon -->
     <link rel="icon" href="../Img/logo.png" type="img/png" />
 
@@ -45,6 +45,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
+
   <body>
     <header class="bg-[#E8F2FF] text-gray-400">
       <div
@@ -161,7 +162,10 @@
           >
           <!-- Studies -->
           <div class="relative group">
-            <a href="../html/case.html" class="text-[#1B528F] font-semibold">
+            <a
+              href="../html/case.html"
+              class="hover:text-[#1B528F] font-semibold"
+            >
               Cash Studies
               <i class="fa-solid fa-angle-down"></i>
             </a>
@@ -182,7 +186,7 @@
             </div>
           </div>
           <!-- Blogs  -->
-          <a href="../html/blog.html" class="hover:text-[#1B528F] font-semibold"
+          <a href="../html/blog.html" class="text-[#1B528F] font-semibold"
             >Blogs</a
           >
         </nav>
@@ -322,105 +326,158 @@
       </div>
     </header>
 
-    <section
-      class="bg-local py-8"
-      style="background-image: url('../Img/about.png')"
-    >
-      <div
-        class="container mx-auto flex flex-col justify-between items-center px-6 lg:flex-row lg:px-20"
-      >
+
+    <section class="bg-local py-8" style="background-image: url('../Img/about.png')">
+      <div class="container mx-auto flex flex-col justify-between items-center px-6 lg:flex-row lg:px-20">
         <!-- Left Content -->
         <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
           <div class="flex flex-col items-center gap-6 justify-end">
             <div class="flex items-center gap-4">
-              <h2
-                class="text-[32px] text-[#1B528F] lg:text-4xl font-bold leading-tight"
-              >
-                Our Doctor
+              <h2 class="text-[32px] text-[#1B528F] lg:text-4xl font-bold leading-tight">
+                Contact Us
               </h2>
               <img src="../Img/bottle.png" alt="" class="w-8" />
             </div>
             <div class="leading-relaxed">
-              <img src="../Img/title.png" alt="" />
+              <img src="../Img/contact-slide.png" alt="" />
             </div>
           </div>
         </div>
-
+  
         <!-- Right Image Section -->
         <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end">
+          <img src="../Img/contact.png" alt="Joint Replacement Surgery" class="max-w-full h-auto" />
+        </div>
+      </div>
+    </section>
+  
+      <div class="relative ">
+             <div class="absolute top-8">
+                  <div class="img">
+                        <img src="../Img/Layer 1.png" alt="" class="">
+                  </div>
+             </div>
+      </div>
+
+
+        
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 my-10 py-10">
+      <!-- Main Content -->
+      <div class="col-span-2 bg-white p-6 rounded-lg shadow-md">
+        <!-- Image -->
+        <div class="mb-6">
           <img
-            src="../Img/Our.png"
-            alt="Joint Replacement Surgery"
-            class="max-w-full h-auto"
+            src="../Img/Rectangle 4073.png"
+            alt="Blog Post Image"
+            class="w-full h-auto rounded-lg"
           />
         </div>
+        <!-- Blog Post Content -->
+        <div>
+          <p class="text-gray-700 mb-4">
+            Receiving a diagnosis of bladder cancer can be overwhelming and
+            frightening. It’s a journey filled with uncertainties, questions,
+            and emotions. However, with the right information and guidance,
+            navigating through this challenging time can become more manageable.
+            Under the guidance of some of the best Urologists in Navi Mumbai,
+            let’s explore some essential tips for coping with bladder cancer
+            diagnosis and treatment.
+          </p>
+          <ul class="list-decimal pl-5 text-gray-700 space-y-3">
+            <li>
+              <strong>Educate Yourself:</strong> One of the most empowering
+              things you can do is educate yourself about the condition,
+              symptoms, and treatment options.
+            </li>
+            <li>
+              <strong>Bladder Cancer and its Types:</strong> Learn about the
+              different types of bladder cancer and the treatment approaches for
+              each.
+            </li>
+            <li>
+              <strong>Consult a Urologist and Medical Oncologist:</strong> Seek
+              guidance from specialists to get the best treatment plan tailored
+              to your condition.
+            </li>
+            <li>
+              <strong>Support from Family Members:</strong> Facing bladder
+              cancer can feel isolating, but support from loved ones makes a
+              difference.
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
 
-    <!-- case Studeis -->
-    <section class="pb-10 sm:pt-[100px]">
-      <div
-        class="flex flex-col md:flex-row gap-10 px-6 md:px-20 items-center justify-around"
-      >
-        <!-- Left Content -->
-        <div class="w-full md:w-1/2">
-          <img src="../Img/case-studies.png" alt="" class="1/2 mx-auto md:mx-0" />
+     
+       <!-- Sidebar -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Search -->
+        <div class="mb-6">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search categories"
+            class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            oninput="filterCategories()"
+          />
+        </div>
+        <!-- Categories -->
+        <div id="categoriesSection" class="mb-6">
+          <h3 class="text-lg font-semibold mb-2">Categories</h3>
+          <ul id="categoryList" class="text-gray-700 space-y-2">
+            <li>Gynecology & Endocrinology</li>
+            <li>Urology</li>
+            <li>Cardiology</li>
+            <li>Orthopedics</li>
+            <li>Neurology</li>
+            <li>Pediatrics</li>
+          </ul>
         </div>
 
-        <!-- Right Content -->
-        <div class="w-full md:w-1/2 flex flex-col gap-6">
-          <!-- Heading -->
-          <div
-            class="text-red-700 font-bold underline underline-offset-8 text-center md:text-left"
-          >
-            <h3>Case Studies</h3>
-          </div>
-          <div
-            class="text-black font-bold text-2xl md:text-4xl text-center md:text-left"
-          >
-            <h2>Adenomyosis</h2>
-          </div>
-          <!-- Description -->
-          <div
-            class="text-[#7F7F7F] text-center md:text-left text-sm md:text-base"
-          >
-          Mrs Y 45 yr old housewife came with menstrual complaints of recent origin.She gave a history of prolonged menstrual cycle with dysmenorrhoea and clots.She had similar menstrual complaints in the past which had subsided with hormonal treatment.Her Pelvic Sonography was suggestive of cystic endometrial hyperplasia(thickened endometrium) with loss of junctional endometrium myometrium zone suggestive of signs of Adenomyosis.Uterus was enlarged with PCOM polycystic ovarian morphology .She had gained weight over past few years and was on medications for thyroid dysfunction.
-          </div>
+          <!-- Tags -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Tags</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Fertility</span>
+          <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Robotic</span>
+          <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Tennis Elbow</span>
         </div>
       </div>
-    </section>
-
-
-      <!-- Checklist -->
-      <div class="check py-10 mx-14 px-10 ">
-           <div class="container mx-auto  w-full">
-                   <!-- Column 1 -->
-          <div class="flex flex-col gap-3 ">
-            <div class="flex items-center gap-3">
-              <img src="../Img/Group 276.png" alt="" class="w-6 h-6" />
-              <div class="text-sm md:text-lg font-semibold">
-                Advance Robotic Surgery
-              </div>
-            </div>
-            <div class="flex items-center gap-3">
-              <img src="../Img/Group 276.png" alt="" class="w-6 h-6" />
-              <div class="text-sm md:text-lg font-semibold">
-                Experienced Doctors
-              </div>
-            </div>
-            <div class="flex items-center gap-3">
-              <img src="../Img/Group 276.png" alt="" class="w-6 h-6" />
-              <div class="text-sm md:text-lg font-semibold">
-                14K+ Surgeries Performed
-              </div>
-            </div>
-          </div>
-           </div>
+      <!-- Archives -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Archives</h3>
+        <ul class="text-gray-700 space-y-2">
+          <li>March 2024</li>
+          <li>February 2024</li>
+          <li>January 2024</li>
+          <li>December 2023</li>
+          <li>November 2023</li>
+        </ul>
       </div>
+      <!-- Popular Posts -->
+      <div>
+        <h3 class="text-lg font-semibold mb-2">Popular Posts</h3>
+        <ul class="text-gray-700 space-y-3">
+          <li>
+            <span class="block text-blue-600 font-medium">Jun 15, 2023</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li>
+            <span class="block text-blue-600 font-medium">Jun 15, 2023</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li>
+            <span class="block text-blue-600 font-medium">Jun 15, 2023</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
 
 
-      
-    <!-- Footer  -->
+    <!-- footer  -->
+
     <footer
       class="text-[#AEE5FF] py-10 px-4 md:px-12 bg-local bg-left-bottom"
       style="background-image: url('../Img/Footer-img.png')"
@@ -723,6 +780,6 @@
       </div>
     </footer>
 
-    <script src="../js/case.js"></script>
+    <script src="../js/blog.js"></script>
   </body>
 </html>
