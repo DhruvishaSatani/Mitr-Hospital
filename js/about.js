@@ -1,11 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("main-header");
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
+  // Sticky Header on Scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("shadow-lg");
+    } else {
+      header.classList.remove("shadow-lg");
+    }
+  });
 
-
-const menuToggle = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
-
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+  // Mobile Menu Toggle
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 });
 
 
@@ -40,3 +50,26 @@ dots.forEach((dot, index) => {
 
 // Auto-update on resize
 window.addEventListener("resize", () => updateCarousel(currentIndex));
+
+
+// Robotic Surgery
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("opacity-100", "translate-y-0");
+        } else {
+          entry.target.classList.remove("opacity-100", "translate-y-0");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".animate-fade").forEach((el) => {
+    observer.observe(el);
+  });
+});

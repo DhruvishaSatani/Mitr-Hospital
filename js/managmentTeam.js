@@ -1,15 +1,48 @@
-const menuToggle = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
+// const menuToggle = document.getElementById("menu-toggle");
+// const mobileMenu = document.getElementById("mobile-menu");
 
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+// menuToggle.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("hidden");
+// });
+
+
+// // Select the header
+// const header = document.getElementById('main-header');
+
+// // Function to handle the sticky header
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 50) {
+//     header.classList.add('shadow-md', 'bg-[#DCEAFF]'); // Add shadow and change background
+//   } else {
+//     header.classList.remove('shadow-md', 'bg-[#DCEAFF]'); // Reset to default
+//   }
+// });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("main-header");
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  // Sticky Header on Scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("shadow-lg");
+    } else {
+      header.classList.remove("shadow-lg");
+    }
+  });
+
+  // Mobile Menu Toggle
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 });
-
 
 const doctors = {
           drSingal: {
             name: "Dr. A.K. Singal",
-            image: "https://s3-alpha-sig.figma.com/img/dda5/4fcc/6b042fcb5727d07d04634e16ffc29fe4?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LofjZqI7w2tCpmhiV3yzR4x5Z5OsphMAMCyPhWjfKEJoh1jLNgZssL~d6NrD-KF-FHG4Wn4247kGcxt-toqMC6NPiZHHzEUZGEFbf~h-M9a8NIqfeMmN8pwwT9bJFM6PRMcFPZVRVdj2M6JRPPGy1QG81qpqbMJCQCdA-w6HTrIE9MnPOm6EZWGzt40hffZg~o5S0WEzd2xN51SZxtbqqKxrXiPuAw5S6QBUlRXLgKacag2Ze4pYA6tnPh7HG~GBVI8WVtX0-KU5q~-Bkw6bPUDkFbFL1octkpV1RDo3blYizt1jvxwH1jUILGmZQHCxvmMKBON7Cj-KIakt8Dlz2A__",
+            image: "Img/Rectangle 521.png",
             details: `Dr Arbinder Kumar Singal is a noted Pediatric Urologist and a Healthcare Entrepreneur based in Navi Mumbai, India. Besides winning academic laurels and professional excellence in medical specialties, Dr Singal has worked at various medical institutes in India/ USA and has been a visiting faculty at University of Minnesota, Boston Children’s (Harvard) and Ohio State University in USA. His innovative surgeries and difficult cases have found a frequent mention in newspapers and telemedia. Dr Singal has more than 40 international publications, numerous presentations at American & European meetings and has been felicitated at various academic forums. Beyond involvement in direct patient care & medical education, Dr Singal has been proactive in designing medical equipment, developing treatment algorithms and establishing new methods of health care delivery.
             
 

@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("main-header");
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  // Sticky Header on Scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("shadow-lg");
+    } else {
+      header.classList.remove("shadow-lg");
+    }
+  });
+
+  // Mobile Menu Toggle
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+});
+
+
 function switchTab(event, tabId) {
           // Hide all content sections
           const tabsContent = document.querySelectorAll('[id^="robotic-surgery"], [id^="andrology"], [id^="urology"]');
@@ -54,3 +75,17 @@ function switchTab(event, tabId) {
             document.getElementById("specialist-description").textContent = content.description;
           }
         }
+
+
+
+
+        // FAQ Section
+
+
+         // JavaScript to toggle FAQ answers
+  function toggleFAQ(index) {
+    const answer = document.getElementById('answer-${index}');
+    const icon = document.getElementById('icon-${index}');
+    answer.classList.toggle("hidden");
+    icon.classList.toggle("rotate-180");
+  }
