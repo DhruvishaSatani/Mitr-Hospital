@@ -75,10 +75,6 @@ function switchTab(event, tabId) {
             document.getElementById("specialist-description").textContent = content.description;
           }
         }
-
-
-
-
         // FAQ Section
 
 
