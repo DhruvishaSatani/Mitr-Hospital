@@ -17,6 +17,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Animate.css CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Roboto font for project -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -287,7 +290,7 @@
             </div>
           </div>
           <!-- Blogs  -->
-          <a href="../html/blog.html" class="hover:text-[#1B528F] font-semibold"
+          <a href="./blog.html" class="hover:text-[#1B528F] font-semibold"
             >Blogs</a
           >
         </nav>
@@ -744,7 +747,7 @@
           </div>
 
           <!-- Content -->
-          <div class="content py-6">
+          <div class="content py-6 mx-8">
             <div
               class="flex flex-col md:flex-row justify-around gap-6 md:gap-10 px-4 md:px-14 px-14 mx-14"
             >
@@ -793,7 +796,7 @@
                 <div class="flex items-center justify-between">
                   <div class="relative">
                     <div class="absolute top-[-64px] right-[-64px] img">
-                      <img src="./Img/Group 292.png" alt="" />
+                      <img src="./Img/g1.png" alt="" />
                     </div>
                   </div>
                   <div class="number">
@@ -833,7 +836,7 @@
                 <div class="flex items-center justify-between">
                   <div class="relative">
                     <div class="absolute top-[-64px] right-[-64px] img">
-                      <img src="./Img/Group 292.png" alt="" />
+                      <img src="./Img/g2.png" alt="" />
                     </div>
                   </div>
                   <div class="number">
@@ -975,110 +978,162 @@
           </h2>
         </div>
 
-        <div class="flex justify-around gap-8 py-4 mx-14 px-16">
-          <div
-            class="rounded-3xl group border border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521.png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
+         <!-- Grid for doctor cards -->
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card Template -->
+          <div class="outer-btn group">
             <div
-              class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521.png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+                <div class="flex justify-between ">
+                  <div class="text-left">
+                    <p class="font-semibold text-gray-400 group-hover:text-white">
+                      Pediatric Urologist
+                    </p>
+                    <h3 class="font-bold text-xl group-hover:text-white">
+                      Dr. A. K. Singal
+                    </h3>
+                  </div>
+
+                  <div class="icon translate-y-3 translate-x-3"><img src="./Img/Group 321.png" alt=""></div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
             >
               <a
-                href="./doctordetaile.html"
-                class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
+                href="doctordetaile.html"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
               >
-                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
           </div>
 
-          <div
-            class="rounded-3xl group border border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521 (1).png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
-            <div
-              class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
-            >
-              <a
-                href="./doctordetaile.html"
-                class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
-              >
-                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="rounded-3xl group border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521 (2).png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
-            <div
-              class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
-            >
-              <a
-                href="./doctordetaile.html"
-                class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
-              >
-                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="rounded-3xl group border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521 (3).png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
-            <div class="text-center md:text-left hidden hover:block">
+          <!-- Repeat the card component for other doctors -->
+            <!-- Card Template -->
+            <div class="outer-btn group">
               <div
-                class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
+                class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+              >
+                <div class="mb-4">
+                  <img
+                    src="./Img/Rectangle 521 (1).png"
+                    alt="Doctor"
+                    class="rounded-lg w-full"
+                  />
+                </div>
+                  <div class="flex justify-between ">
+                    <div class="text-left">
+                      <p class="font-semibold text-gray-400 group-hover:text-white">
+                        Gastroenterologists
+                      </p>
+                      <h3 class="font-bold text-xl group-hover:text-white">
+                        Dr. Amit Gharat
+                      </h3>
+                    </div>
+  
+                    <div class="icon translate-y-3 translate-x-3"><img src="./Img/Group 321.png" alt=""></div>
+                  </div>
+              </div>
+              <!-- Button -->
+              <div
+                class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
               >
                 <a
                   href="./doctordetaile.html"
-                  class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
+                  class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
                 >
-                  View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                  View Details<i class="fa-solid fa-arrow-right ml-2"></i>
                 </a>
               </div>
             </div>
+
+           <!-- Card Template -->
+           <div class="outer-btn group">
+            <div
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521 (2).png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+                <div class="flex justify-between ">
+                  <div class="text-left">
+                    <p class="font-semibold text-gray-400 group-hover:text-white">
+                      Urologist
+                    </p>
+                    <h3 class="font-bold text-xl group-hover:text-white">
+                      Dr. Manish Dubey
+                    </h3>
+                  </div>
+
+                  <div class="icon translate-y-3 translate-x-3"><img src="./Img/Group 321.png" alt=""></div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
+            >
+              <a
+                href="doctordetaile.html"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
+              >
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
+
+          <!-- Card Template -->
+          <div class="outer-btn group">
+            <div
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521 (3).png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+                <div class="flex justify-between ">
+                  <div class="text-left">
+                    <p class="font-semibold text-gray-400 group-hover:text-white">
+                      Radiologist
+                    </p>
+                    <h3 class="font-bold text-xl group-hover:text-white">
+                      Dr Sunita V Malladi
+                    </h3>
+                  </div>
+
+                  <div class="icon translate-y-3 translate-x-3"><img src="./Img/Group 321.png" alt=""></div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
+            >
+              <a
+                href="./doctordetaile.html"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
+              >
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Add more cards as needed -->
         </div>
       </div>
     </section>
@@ -1183,9 +1238,6 @@
       </div>
     </section>
 
- 
-
-
 
 
     <!-- Best Hospital -->
@@ -1245,7 +1297,7 @@
       </div>
 
       <!-- Articles Container -->
-      <div class="flex flex-wrap justify-center gap-8 py-4 px-4 md:px-16">
+      <div class="flex flex-wrap justify-center gap-8 py-4 px-4 md:px-16 animate__animated animate__fadeInDown">
         <!-- Card 1 -->
         <div
           class="flex group flex-col rounded-xl shadow-lg relative transition hover:bg-[#1B528F] w-full sm:w-[calc(50%-1rem)] md:w-[calc(33%-1rem)] lg:w-[calc(25%-1rem)]"
@@ -1682,6 +1734,18 @@
         </div>
       </div>
     </footer>
+ 
+    <script src="./js/script.js"></script>
+
+    <!-- WOW.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- WOW.js CDN -->
+<script>
+  new WOW().init();
+</script> 
+
+
 
     <script>
       // Scroll to Top Button Logic
@@ -1703,6 +1767,6 @@
       }
     </script>
 
-    <script src="./js/script.js"></script>
+   
   </body>
 </html>

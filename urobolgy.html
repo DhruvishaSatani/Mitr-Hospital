@@ -34,7 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- tailwind css link -->
     <script>
       /** @type {import('tailwindcss').Config} */
@@ -72,9 +72,7 @@
           <!-- Links -->
 
           <!-- Home  -->
-          <a href="./index.html" class="font-roboto font-semibold"
-            >Home</a
-          >
+          <a href="./index.html" class="font-roboto font-semibold">Home</a>
 
           <!-- Dropdown: About Us -->
           <div class="relative group">
@@ -204,23 +202,16 @@
           </div>
 
           <!-- Doctor -->
-          <a
-            href="./Doctor.html"
-            class="hover:text-[#1B528F] font-semibold"
+          <a href="./Doctor.html" class="hover:text-[#1B528F] font-semibold"
             >Our Doctors</a
           >
           <!-- Media  -->
-          <a
-            href="./media.html"
-            class="hover:text-[#1B528F] font-semibold"
+          <a href="./media.html" class="hover:text-[#1B528F] font-semibold"
             >Media</a
           >
           <!-- Studies -->
           <div class="relative group">
-            <a
-              href="./case.html"
-              class="hover:text-[#1B528F] font-semibold"
-            >
+            <a href="./case.html" class="hover:text-[#1B528F] font-semibold">
               Cash Studies
               <i class="fa-solid fa-angle-down"></i>
             </a>
@@ -543,6 +534,7 @@
       </div>
     </header>
 
+
     <section
       class="bg-local py-8"
       style="background-image: url('./Img/about.png')"
@@ -787,10 +779,9 @@
           </div>
         </div>
       </div>
-
-      <!-- Tabs Section -->
     </div>
 
+    <!-- Tabs Section -->
     <div class="w-full">
       <div class="container mx-auto">
         <div class="mt-8">
@@ -1113,7 +1104,6 @@
     </div>
 
     <!-- FAQ -->
-
     <section class="my-10 py-9">
       <div class="container mx-auto">
         <div>
@@ -1132,13 +1122,11 @@
 
         <div class="grid lg:grid-cols-2 gap-8 mt-8 items-center">
           <!-- Left Side Image -->
-          <div class="relative flex flex-col">
-            <div
-              class="bg-local bg-no-repeat bg-right"
-              style="background-image: url('./Img/Ifaq\ Title.png')"
-            >
-              <img src="./Img/Faq.png" alt="" class="" style="" />
+          <div class="relative flex items-center ">
+            <div class=" ">
+              <img src="./Img/Ifaq Title.png" alt="" class="" />
             </div>
+              <div class="z-30  translate-x-[-140px]"><img src="./Img/Faq.png" alt="" class="w-4/5 z-30" /></div>
           </div>
 
           <!-- Right Side FAQ Section -->
@@ -1148,182 +1136,233 @@
               data-accordion="collapse"
               data-active-classes="bg-white-100 dark:bg-white text-dark-600 dark:text-dark"
             >
-              <h2 id="accordion-color-heading-1">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0  rounded-t-xl   dark:text-gray-400  gap-3"
-                  data-accordion-target="#accordion-color-body-1"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-1"
-                >
-                  <span>What is Flowbite?</span>
-                  <svg
-                    data-accordion-icon
-                    class="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+              <div class="py-3 px-4 border-2 shadow-lg border-gray-200 hover:border-[#2D7AB3]  my-4 rounded-lg">
+                <h2 id="accordion-color-heading-1 mb-2">
+                  <button
+                    type="button"
+                    class="flex items-center justify-between w-full  font-medium rtl:text-right text-gray-500  rounded-t-xl dark:text-gray-400 gap-3"
+                    data-accordion-target="#accordion-color-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-color-body-1"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-1"
-                class="hidden"
-                aria-labelledby="accordion-color-heading-1"
-              >
-                <div
-                  class="p-5 border border-b-0  outline-none"
-                >
-                  <p class="mb-2 text-dark-500 dark:text-white-400">
-                    Flowbite is an open-source library of interactive components
-                    built on top of Tailwind CSS including buttons, dropdowns,
-                    modals, navbars, and more.
-                  </p>
-                  <p class="text-dark  dark:text-white-400">
-                    Check out this guide to learn how to
-                    <a
-                      href="/docs/getting-started/introduction/"
-                      class="text-blue-600 dark:text-blue-500 hover:underline"
-                      >get started</a
+                    <span class="font-roboto font-bold text-dark text-lg">01. How can I book an appointment for emergency treatment?</span>
+                    <svg
+                      data-accordion-icon
+                      class="   w-3 h-3 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
                     >
-                    and start developing websites even faster with components on
-                    top of Tailwind CSS.
-                  </p>
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-color-body-1"
+                  class="hidden"
+                  aria-labelledby="accordion-color-heading-1"
+                >
+                  <div class=" text-lg font-roboto outline-none">
+                    <p class="text-gray-500">
+                      Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                   
+                  </div>
                 </div>
               </div>
-              <h2 id="accordion-color-heading-2">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 gap-3"
-                  data-accordion-target="#accordion-color-body-2"
-                  aria-expanded="false"
-                  aria-controls="accordion-color-body-2"
-                >
-                  <span>Is there a Figma file available?</span>
-                  <svg
-                    data-accordion-icon
-                    class="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+
+              <div class="py-3 px-4 border-2 shadow-lg border-gray-200 hover:border-[#2D7AB3]  my-4 rounded-lg">
+                    
+                <h2 id="accordion-color-heading-3">
+                  <button
+                    type="button"
+                    class="flex items-center justify-between w-full    font-medium rtl:text-right text-gray-500  gap-3"
+                    data-accordion-target="#accordion-color-body-3"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-3"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-2"
-                class="hidden"
-                aria-labelledby="accordion-color-heading-2"
-              >
-                <div
-                  class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
-                >
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    Flowbite is first conceptualized and designed using the
-                    Figma software so everything you see in the library has a
-                    design equivalent in our Figma file.
-                  </p>
-                  <p class="text-gray-500 dark:text-gray-400">
-                    Check out the
-                    <a
-                      href="https://flowbite.com/figma/"
-                      class="text-blue-600 dark:text-blue-500 hover:underline"
-                      >Figma design system</a
+                    <span class="font-roboto font-bold text-dark text-lg">02. Do you use anesthetics for operation in your hospital?</span>
+                    <svg
+                      data-accordion-icon
+                      class="w-3 h-3 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
                     >
-                    based on the utility classes from Tailwind CSS and
-                    components from Flowbite.
-                  </p>
-                </div>
-              </div>
-              <h2 id="accordion-color-heading-3">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0  rounded-b-xl   dark:text-gray-400  gap-3"
-                  data-accordion-target="#accordion-color-body-3"
-                  aria-expanded="false"
-                  aria-controls="accordion-color-body-3"
-                >
-                  <span
-                    >What are the differences between Flowbite and Tailwind
-                    UI?</span
-                  >
-                  <svg
-                    data-accordion-icon
-                    class="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-3"
-                class="hidden"
-                aria-labelledby="accordion-color-heading-3"
-              >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"
+                      />
+                    </svg>
+                  </button>
+                </h2>
                 <div
-                  class="p-5 border border-b-1 border-gray-200 dark:border-gray-700"
+                  id="accordion-color-body-3"
+                  class="hidden"
+                  aria-labelledby="accordion-color-heading-3"
                 >
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    The main difference is that the core components from
-                    Flowbite are open source under the MIT license, whereas
-                    Tailwind UI is a paid product. Another difference is that
-                    Flowbite relies on smaller and standalone components,
-                    whereas Tailwind UI offers sections of pages.
-                  </p>
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    However, we actually recommend using both Flowbite, Flowbite
-                    Pro, and even Tailwind UI as there is no technical reason
-                    stopping you from using the best of two worlds.
-                  </p>
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    Learn more about these technologies:
-                  </p>
-                  <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                    <li>
-                      <a
-                        href="https://flowbite.com/pro/"
-                        class="text-blue-600 dark:text-blue-500 hover:underline"
-                        >Flowbite Pro</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://tailwindui.com/"
-                        rel="nofollow"
-                        class="text-blue-600 dark:text-blue-500 hover:underline"
-                        >Tailwind UI</a
-                      >
-                    </li>
-                  </ul>
+                  <div
+                    class=" dark:border-gray-700"
+                  >
+                    <p class="text-gray-500 text-base">
+                      Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                   
+                  </div>
                 </div>
+
               </div>
+
+              <div class="py-3 px-4 border-2 shadow-lg border-gray-200 hover:border-[#2D7AB3]  my-4 rounded-lg">
+                    
+                <h2 id="accordion-color-heading-2">
+                  <button
+                    type="button"
+                    class="flex items-center justify-between w-full    font-medium rtl:text-right text-gray-500  gap-3"
+                    data-accordion-target="#accordion-color-body-2"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-2"
+                  >
+                    <span class="font-roboto font-bold text-dark text-lg">03. What are the specialties of your hospital neurologists?</span>
+                    <svg
+                      data-accordion-icon
+                      class="w-3 h-3 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-color-body-2"
+                  class="hidden"
+                  aria-labelledby="accordion-color-heading-2"
+                >
+                  <div
+                    class=" dark:border-gray-700"
+                  >
+                    <p class="text-gray-500 text-base">
+                      Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                   
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="py-3 px-4 border-2 shadow-lg border-gray-200 hover:border-[#2D7AB3]  my-4 rounded-lg">
+                    
+                <h2 id="accordion-color-heading-4">
+                  <button
+                    type="button"
+                    class="flex items-center justify-between w-full    font-medium rtl:text-right text-gray-500  gap-3"
+                    data-accordion-target="#accordion-color-body-4"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-4"
+                  >
+                    <span class="font-roboto font-bold text-dark text-lg">04. What is procedures of parathyroid scanning in your hospital?</span>
+                    <svg
+                      data-accordion-icon
+                      class="w-3 h-3 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-color-body-4"
+                  class="hidden"
+                  aria-labelledby="accordion-color-heading-4"
+                >
+                  <div
+                    class=" dark:border-gray-700"
+                  >
+                    <p class="text-gray-500 text-base">
+                      Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                   
+                  </div>
+                </div>
+
+              </div>
+               
+              <div class="py-3 px-4 border-2 shadow-lg border-gray-200 hover:border-[#2D7AB3]  my-4 rounded-lg">
+                    
+                <h2 id="accordion-color-heading-5">
+                  <button
+                    type="button"
+                    class="flex items-center justify-between w-full    font-medium rtl:text-right text-gray-500  gap-3"
+                    data-accordion-target="#accordion-color-body-5"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-5"
+                  >
+                    <span class="font-roboto font-bold text-dark text-lg">05. How your doctor and staff take care of orthopedic patients?</span>
+                    <svg
+                      data-accordion-icon
+                      class="w-3 h-3 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-color-body-5"
+                  class="hidden"
+                  aria-labelledby="accordion-color-heading-5"
+                >
+                  <div
+                    class=" dark:border-gray-700"
+                  >
+                    <p class="text-gray-500 text-base">
+                      Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                   
+                  </div>
+                </div>
+
+              </div>
+
+              
             </div>
           </div>
         </div>
@@ -1430,8 +1469,9 @@
       </div>
     </section>
 
-    <!-- Our Doctors -->
 
+
+    <!-- Our Doctors -->
     <section class="pb-12">
       <div class="flex flex-col items-center">
         <!-- Header    -->
@@ -1446,113 +1486,175 @@
           </h2>
         </div>
 
-        <div class="flex justify-around gap-8 py-4 mx-14 px-16">
-          <div
-            class="rounded-3xl group border border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521.png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
+        <!-- Grid for doctor cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card Template -->
+          <div class="outer-btn group">
             <div
-              class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521.png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="text-left">
+                  <p class="font-semibold text-gray-400 group-hover:text-white">
+                    Pediatric Urologist
+                  </p>
+                  <h3 class="font-bold text-xl group-hover:text-white">
+                    Dr. A. K. Singal
+                  </h3>
+                </div>
+
+                <div class="icon translate-y-3 translate-x-3">
+                  <img src="./Img/Group 321.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
             >
               <a
-                href="./doctordetaile.html"
-                class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
+                href="doctordetaile.html"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
               >
-                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
           </div>
 
-          <div
-            class="rounded-3xl group border border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521 (1).png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
+          <!-- Repeat the card component for other doctors -->
+          <!-- Card Template -->
+          <div class="outer-btn group">
             <div
-              class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521 (1).png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="text-left">
+                  <p class="font-semibold text-gray-400 group-hover:text-white">
+                    Gastroenterologists
+                  </p>
+                  <h3 class="font-bold text-xl group-hover:text-white">
+                    Dr. Amit Gharat
+                  </h3>
+                </div>
+
+                <div class="icon translate-y-3 translate-x-3">
+                  <img src="./Img/Group 321.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
             >
               <a
                 href="./doctordetaile.html"
-                class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
               >
-                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
           </div>
-          <div
-            class="rounded-3xl group border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521 (2).png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
+
+          <!-- Card Template -->
+          <div class="outer-btn group">
             <div
-              class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521 (2).png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="text-left">
+                  <p class="font-semibold text-gray-400 group-hover:text-white">
+                    Urologist
+                  </p>
+                  <h3 class="font-bold text-xl group-hover:text-white">
+                    Dr. Manish Dubey
+                  </h3>
+                </div>
+
+                <div class="icon translate-y-3 translate-x-3">
+                  <img src="./Img/Group 321.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
+            >
+              <a
+                href="doctordetaile.html"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
+              >
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Template -->
+          <div class="outer-btn group">
+            <div
+              class="rounded-3xl border border-gray-100 p-4 hover:bg-[#1B528F] hover:transition duration-500 hover:text-white"
+            >
+              <div class="mb-4">
+                <img
+                  src="./Img/Rectangle 521 (3).png"
+                  alt="Doctor"
+                  class="rounded-lg w-full"
+                />
+              </div>
+              <div class="flex justify-between">
+                <div class="text-left">
+                  <p class="font-semibold text-gray-400 group-hover:text-white">
+                    Radiologist
+                  </p>
+                  <h3 class="font-bold text-xl group-hover:text-white">
+                    Dr Sunita V Malladi
+                  </h3>
+                </div>
+
+                <div class="icon translate-y-3 translate-x-3">
+                  <img src="./Img/Group 321.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Button -->
+            <div
+              class="flex flex-col items-center mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-[-170px] transition duration-700"
             >
               <a
                 href="./doctordetaile.html"
-                class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
+                class="inline-block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg"
               >
-                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                View Details<i class="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
           </div>
-          <div
-            class="rounded-3xl group border-gray-100 px-2 py-2 hover:bg-[#1B528F] hover:transition duration-700 hover:text-white hover:block"
-          >
-            <div class="m-2">
-              <img src="./Img/Rectangle 521 (3).png" alt="" class="" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="text-left">
-                <p class="font-semibold text-gray-400">Pediatric Urologist</p>
-                <h3 class="font-bold text-xl">Dr. A. K. Singal</h3>
-              </div>
-              <img src="./Img/Group 321.png" alt="" />
-            </div>
-            <!-- button -->
-            <div class="text-center md:text-left hidden hover:block">
-              <div
-                class="text-center flex flex-col items-center md:text-left opacity-0 mt-[-200px] group-hover:opacity-100"
-              >
-                <a
-                  href="./doctordetaile.html"
-                  class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
-                >
-                  View Details <i class="fa-solid fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+
+          <!-- Add more cards as needed -->
         </div>
       </div>
     </section>
+
+    
 
     <!-- Footer  -->
     <footer
