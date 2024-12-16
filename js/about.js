@@ -48,13 +48,13 @@ dots.forEach((dot, index) => {
   });
 });
 
+
+
 // Auto-update on resize
 window.addEventListener("resize", () => updateCarousel(currentIndex));
 
 
 // Robotic Surgery
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -73,3 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+
+

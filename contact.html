@@ -20,10 +20,12 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
-    
-  <!-- Animate.css CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
   <!-- tailwind css link -->
   <script>
@@ -349,13 +351,13 @@
     <!-- Left Content -->
     <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
       <div class="flex flex-col items-center gap-6 justify-end">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 " >
           <h2 class="text-[32px] text-[#1B528F] lg:text-4xl font-bold leading-tight ">
             Contact Us
           </h2>
           <img src="./Img/bottle.png" alt="" class="w-8" />
         </div>
-        <div class="leading-relaxed">
+        <div class="leading-relaxed ">
           <img src="./Img/contact-slide.png" alt="" />
         </div>
       </div>
@@ -379,7 +381,7 @@
 <!-- COntact  Form -->
 <div class="  flex justify-center items-center min-h-screen">
   <div class=" bg-white rounded-md w-full max-w-4xl p-8">
-    <div class=" flex flex-col md:flex-row md:justify-between gap-6 animate__animated animate__fadeInDown ">
+    <div class=" flex flex-col md:flex-row md:justify-between gap-6" data-aos="fade-down"  data-aos-easing="linear" data-aos-duration="1500">
       <!-- Contact Info Section -->
       <div class="bg-local bg-no-repeat bg-right-bottom rounded-xl p-6 w-full md:w-1/3"
         style="background-image: url('./Img/contact-bg.png')">
@@ -486,7 +488,8 @@
 <div class="max-w-6xl mx-auto">
   <div class="relative  pb-10">
     <!-- Map -->
-    <div class="aspect-w-16 aspect-h-12">
+    <div class="aspect-w-16 aspect-h-12 "
+    data-aos="fade-up"  data-aos-duration="1000">
       <iframe class="w-full h-[500px] rounded-lg"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8584558417853!2d73.07078091535268!3d19.037546487116246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79544c5e5d3cf%3A0x1b8ef19f2b63b3af!2sMITR%20Hospital!5e0!3m2!1sen!2sin!4v1639988022729!5m2!1sen!2sin"
         frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -496,39 +499,45 @@
   <!-- Address Cards -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 mb-8">
     <!-- Address 1 -->
-    <div class="bg-[#1B528F] text-white p-4 shadow rounded-lg">
-      <div class="flex  gap-3">
-        <img src="./Img/location.png" alt="">
-        <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
+    <div class="bg-[#1B528F] text-white p-4 shadow rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="flex gap-3">
+        <img src="./Img/location.png" alt="" data-aos="zoom-in" data-aos-duration="800">
+        <h3 class="text-lg font-semibold text-white" data-aos="fade-right" data-aos-duration="1000">Hospital Address
+        </h3>
       </div>
-      <p class="  ml-4 text-white px-6">
+      <p class="ml-4 text-white px-6" data-aos="fade-left" data-aos-duration="1200">
         Plot:37, Eden Gardens, opposite Harmony International School,<br>
         Sector-5, Kharghar, Navi Mumbai, Maharashtra 410210
       </p>
     </div>
+
     <!-- Address 2 -->
-    <div class="bg-[#1B528F] text-white p-4 shadow rounded-lg">
-      <div class="flex  gap-3">
+    <div class="bg-[#1B528F] text-white p-4 shadow rounded-lg wow animate__fadeInUp" data-aos="fade-up"
+      data-aos-duration="1000">
+      <div class="flex gap-3">
         <img src="./Img/location.png" alt="">
         <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
       </div>
-      <p class=" ml-4 text-white pt-2">
+      <p class="ml-4 text-white pt-2" data-aos="fade-left" data-aos-duration="1200">
         C1/8, Ground Floor, Opposite Green City,<br>
         Vashi, Navi Mumbai, Maharashtra 400703
       </p>
     </div>
+
     <!-- Address 3 -->
-    <div class="bg-[#1B528F] text-white p-4 shadow rounded-lg">
-      <div class="flex  gap-3">
+    <div class="bg-[#1B528F] text-white p-4 shadow rounded-lg wow animate__fadeInRight" data-aos="fade-up"
+      data-aos-duration="1000">
+      <div class="flex gap-3">
         <img src="./Img/location.png" alt="">
         <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
       </div>
-      <p class=" ml-4 text-white pt-2">
+      <p class="ml-4 text-white pt-2" data-aos="fade-left" data-aos-duration="1200">
         310, 3rd floor, Nms Icon, Sector 19, Ulwe,<br>
         Navi Mumbai, Maharashtra 410206
       </p>
     </div>
   </div>
+
 </div>
 
 <!-- footer  -->
@@ -774,6 +783,22 @@
 <script>
   new WOW().init();
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Aos script  -->
+<script>
+  AOS.init({
+    // Optional settings
+    duration: 1000,  // animation duration in milliseconds
+    easing: 'ease-in-out', // animation easing
+    once: true,  // animation will only happen once
+  });
+</script>
+
+<!-- jsdeliver js -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 <script>
   // Scroll to Top Button Logic

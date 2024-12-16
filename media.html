@@ -21,6 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
 
+ <!-- Animate.css CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
   <!-- tailwind css link -->
 
   <script>
@@ -374,26 +378,31 @@
   <section class="bg-local py-8" style="background-image: url('./Img/about.png')">
     <div class="container pt-16 mx-auto flex flex-col justify-between items-center px-6 lg:flex-row lg:px-20">
       <!-- Left Content -->
-      <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+      <div class="lg:w-1/2 space-y-6 text-center lg:text-left ">
         <div class="flex flex-col items-center gap-6 justify-end">
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 animate__animated animate__fadeIn" style="animation-duration: 2s;">
             <h2 class="text-[32px] text-[#1B528F] lg:text-4xl font-bold leading-tight">
               Media-MITR
             </h2>
             <img src="./Img/bottle.png" alt="" class="w-8" />
           </div>
-          <div class="leading-relaxed">
+          <div class="leading-relaxed animate__animated animate__fadeInLeft">
             <img src="./Img/media.png" alt="" />
           </div>
         </div>
       </div>
 
       <!-- Right Image Section -->
-      <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end">
+      <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end animate__animated animate__fadeIn" style="animation-duration: 2s;">
         <img src="./Img/media-head.png" alt="Joint Replacement Surgery" class="max-w-full h-auto" />
       </div>
     </div>
   </section>
+
+
+
+
+
   <!-- Tabs Section -->
   <div class="mt-8 flex flex-col items-center mx-10">
     <ul id="tabs" class="flex border-b">
@@ -423,7 +432,7 @@
     <!-- Gallery  -->
     <div id="urology" class="mt-4">
       <!-- header  -->
-      <div class="flex flex-col items-center my-5">
+      <div class="flex flex-col items-center my-5 animate__animated animate__fadeIn" style="animation-duration: 2s; animation-delay: 1.25s;">
         <p class="text-red-700 font-bold underline underline-offset-8 text-center md:text-left">
           Gallery-MITR
         </p>
@@ -434,24 +443,24 @@
 
       <div>
         <div class="grid grid-cols-3 gap-6 mb-6">
-          <div><img src="./Img/m1.png" alt="" /></div>
-          <div><img src="./Img/m2.png" alt="" /></div>
-          <div><img src="./Img/m3.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInDown" style="animation-duration: 2s; animation-delay: 1.25s;"><img src="./Img/m1.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInDown" style="animation-duration: 2s; animation-delay: 1.5s;"><img src="./Img/m2.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInDown" style="animation-duration: 2s; animation-delay: 1.75s;"><img src="./Img/m3.png" alt="" /></div>
         </div>
         <div class="flex gap-6 mb-6">
-          <div><img src="./Img/m4.png" alt="" /></div>
-          <div><img src="./Img/m5.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 1.75s;"><img src="./Img/m4.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 2s;"><img src="./Img/m5.png" alt="" /></div>
         </div>
         <div class="flex gap-6 mb-6">
-          <div><img src="./Img/m6.png" alt="" /></div>
-          <div><img src="./Img/m7.png" alt="" /></div>
-          <div><img src="./Img/m8.png" alt="" /></div>
-          <div><img src="./Img/m9.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m6.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m7.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m8.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m9.png" alt="" /></div>
         </div>
 
         <div class="flex gap-6 mb-6">
-          <div><img src="./Img/m10.png" alt="" /></div>
-          <div><img src="./Img/m11.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInUp" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m10.png" alt="" /></div>
+          <div class="animate__animated animate__fadeInUp" style="animation-duration: 1.75s; animation-delay: 2.5s;"><img src="./Img/m11.png" alt="" /></div>
         </div>
       </div>
     </div>
@@ -470,15 +479,15 @@
       </div>
 
       <div class="flex gap-6 mb-6">
-        <div><img src="./Img/m6.png" alt="" /></div>
-        <div><img src="./Img/m7.png" alt="" /></div>
-        <div><img src="./Img/m8.png" alt="" /></div>
-        <div><img src="./Img/m9.png" alt="" /></div>
+        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay: 0.25s;"><img src="./Img/m6.png" alt="" /></div>
+        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay:0.75s ;"><img src="./Img/m7.png" alt="" /></div>
+        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay: 1s;"><img src="./Img/m8.png" alt="" /></div>
+        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay:1.25s ;"><img src="./Img/m9.png" alt="" /></div>
       </div>
 
       <div class="flex gap-6 mb-6">
-        <div><img src="./Img/m10.png" alt="" /></div>
-        <div><img src="./Img/m11.png" alt="" /></div>
+        <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 1.25s;"><img src="./Img/m10.png" alt="" /></div>
+        <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 1.25s;"><img src="./Img/m11.png" alt="" /></div>
       </div>
     </div>
   
@@ -739,6 +748,16 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- WOW.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- WOW.js CDN -->
+<script>
+  new WOW().init();
+</script>
+
 
   <script>
     // Scroll to Top Button Logic
