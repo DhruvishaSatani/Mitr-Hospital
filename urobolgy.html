@@ -35,6 +35,13 @@
       rel="stylesheet"
     />
 
+        <!-- Animate.css CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- AOS -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
     <!-- tailwind css link -->
     <script>
       /** @type {import('tailwindcss').Config} */
@@ -552,14 +559,17 @@
               </h2>
               <img src="./Img/bottle.png" alt="" class="w-8" />
             </div>
-            <div class="leading-relaxed">
+            <div class="leading-relaxed" data-aos="fade-right" data-aos-duration="1000">
               <img src="./Img/urology-line.png" alt="" />
             </div>
           </div>
         </div>
 
         <!-- Right Image Section -->
-        <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end">
+        <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end"  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
           <img
             src="./Img/urology-header.png"
             alt="Joint Replacement Surgery"
@@ -2006,6 +2016,31 @@
     </script>
 
     <script src="./js/urobolgy.js"></script>
+
+       
+   <!-- WOW.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- WOW.js CDN -->
+<script>
+  new WOW().init();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Aos script  -->
+<script>
+  AOS.init({
+    // Optional settings
+    duration: 1000,  // animation duration in milliseconds
+    easing: 'ease-in-out', // animation easing
+    once: true,  // animation will only happen once
+  });
+</script>
+
+<!-- jsdeliver js -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.js"
       integrity="sha512-LThUFuq6Y8DTeSxG7VgJQu+3slKAhZ1u3z1EJdZESaVuQIEJ7TXC/DV8xNNEDFW01iWF4tUuzeC4RdiyrRPdRw=="

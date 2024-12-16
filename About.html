@@ -27,6 +27,18 @@
       rel="stylesheet"
     />
 
+    <!-- Animate.css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
     <!-- tailwind css link -->
 
     <script>
@@ -65,9 +77,7 @@
           <!-- Links -->
 
           <!-- Home  -->
-          <a href="./index.html" class="font-roboto font-semibold"
-            >Home</a
-          >
+          <a href="./index.html" class="font-roboto font-semibold">Home</a>
 
           <!-- Dropdown: About Us -->
           <div class="relative group">
@@ -100,7 +110,7 @@
             </a>
             <!-- Dropdown -->
             <div
-              class="absolute left-0 mt-2 p-3 w-80 bg-white text-black rounded-lg text-base text-gray-400 space-y-2 font-roboto opacity-0  invisible group-hover:visible  group-hover:opacity-100  group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+              class="absolute left-0 mt-2 p-3 w-80 bg-white text-black rounded-lg text-base text-gray-400 space-y-2 font-roboto opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
             >
               <a href="./urobolgy.html" class="block px-2 hover:text-[#1B528F]"
                 >Urology</a
@@ -157,7 +167,7 @@
             </a>
             <!-- Dropdown -->
             <div
-              class="absolute left-0 mt-2 p-3 w-52 bg-white text-black rounded-lg text-base text-gray-400 space-y-2 font-roboto opacity-0   invisible group-hover:visible  group-hover:opacity-100  group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+              class="absolute left-0 mt-2 p-3 w-52 bg-white text-black rounded-lg text-base text-gray-400 space-y-2 font-roboto opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
             >
               <a href="./urobolgy.html" class="block px-2 hover:text-[#1B528F]"
                 >Cashless Insaurance</a
@@ -197,29 +207,22 @@
           </div>
 
           <!-- Doctor -->
-          <a
-            href=".//Doctor.html"
-            class="hover:text-[#1B528F] font-semibold"
+          <a href=".//Doctor.html" class="hover:text-[#1B528F] font-semibold"
             >Our Doctors</a
           >
           <!-- Media  -->
-          <a
-            href=".//media.html"
-            class="hover:text-[#1B528F] font-semibold"
+          <a href=".//media.html" class="hover:text-[#1B528F] font-semibold"
             >Media</a
           >
           <!-- Studies -->
           <div class="relative group">
-            <a
-              href=".//case.html"
-              class="hover:text-[#1B528F] font-semibold"
-            >
+            <a href=".//case.html" class="hover:text-[#1B528F] font-semibold">
               Cash Studies
               <i class="fa-solid fa-angle-down"></i>
             </a>
             <!-- Dropdown -->
             <div
-              class="absolute left-0 mt-2 p-3 w-80 bg-white text-black rounded-lg text-base text-gray-400 space-y-2 font-roboto opacity-0  invisible group-hover:visible   group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
+              class="absolute left-0 mt-2 p-3 w-80 bg-white text-black rounded-lg text-base text-gray-400 space-y-2 font-roboto opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-200"
             >
               <a href="./urobolgy.html" class="block px-2 hover:text-[#1B528F]"
                 >Adenomyosis</a
@@ -309,7 +312,10 @@
       </div>
 
       <!-- Mobile Navbar -->
-      <div id="mobile-menu" class="hidden flex flex-col items-center bg-[#E8F2FF] p-4">
+      <div
+        id="mobile-menu"
+        class="hidden flex flex-col items-center bg-[#E8F2FF] p-4"
+      >
         <!-- Home -->
         <a
           href=".//index.html"
@@ -550,14 +556,17 @@
             >
               About Us
             </h2>
-            <div class="leading-relaxed">
+            <div class="leading-relaxed" data-aos="fade-right" data-aos-duration="1000">
               <img src="./Img/Group 336.png" alt="" />
             </div>
           </div>
         </div>
 
         <!-- Right Image Section -->
-        <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end">
+        <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end"  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
           <img
             src="./Img/team.png"
             alt="Joint Replacement Surgery"
@@ -568,46 +577,42 @@
     </section>
 
     <!-- About MITR -->
-
-    <section class="pb-10 sm:pt-[200px] mx-12">
+    <!-- health & medicine -->
+    <section class="pb-10 sm:pt-[200px]">
       <div
         class="flex flex-col md:flex-row gap-10 px-6 md:px-20 items-center justify-around"
       >
         <!-- Left Content -->
         <div class="w-full md:w-1/2">
-          <img
-            src="./Img/Group 282.png"
-            alt=""
-            class="w-4/5 mx-auto md:mx-0"
-          />
+          <img src="./Img/Group 282.png" alt="" class="w-4/5 mx-auto md:mx-0" />
         </div>
 
         <!-- Right Content -->
-        <div class="w-full md:w-1/2 flex flex-col gap-6">
+        <div
+          class="w-full md:w-1/2 flex flex-col gap-6"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <!-- Heading -->
           <div
             class="text-red-700 font-bold underline underline-offset-8 text-center md:text-left"
           >
-            <h3>About</h3>
+            <h3>Health & Medicine</h3>
           </div>
           <div
             class="text-black font-bold text-2xl md:text-4xl text-center md:text-left"
           >
-            <h2>MITR Hospital</h2>
+            <h2>Best Hospital in Navi Mumbai</h2>
           </div>
           <!-- Description -->
           <div
             class="text-gray-400 text-center md:text-left text-sm md:text-base"
           >
             MITR Hospital at Kharghar is Navi Mumbai’s Premier Surgical Hospital
-            offering best surgery and endoscopy and the most advanced robotic
-            surgical treatments under one roof and beautiful ambience. The
-            Hospital is located in a very picturesque location in verdant hills
-            of Navi Mumbai & Raigad area. MITR stands for “Minimally Invasive
-            Treatment & Research”, meaning a centre dedicated to Minimally
-            Invasive Surgery or Keyhole Surgery using Laparoscopy & endoscopic
-            and robotic surgical techniques. At the same time, MITR in our
-            mother tongue means a "Dear Friend".
+            renowned as the <br />
+            "Best Hospital in Navi Mumbai," offering the best surgery and
+            endoscopy and br the most advanced robotic surgical.
           </div>
           <!-- Checklist -->
           <div class="check pt-3">
@@ -647,6 +652,12 @@
                     Modern Equipment
                   </div>
                 </div>
+                <div class="flex items-center gap-3">
+                  <img src="./Img/Group 276.png" alt="" class="w-6 h-6" />
+                  <div class="text-sm md:text-lg font-semibold">
+                    Day Care Surgeries
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -655,7 +666,7 @@
             <button
               class="inline-block mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
             >
-              Contact Us<i class="fa-solid fa-arrow-right ml-2"></i>
+              Discover More <i class="fa-solid fa-arrow-right ml-2"></i>
             </button>
           </div>
         </div>
@@ -700,9 +711,6 @@
       </div>
     </section>
 
-
-    
-
     <!-- Quality  -->
     <section class="py-8">
       <div class="px-12 mx-14">
@@ -730,7 +738,9 @@
         class="flex flex-col md:flex-row gap-8 md:gap-14 px-4 sm:px-12 items-center justify-between"
       >
         <!-- Left Content -->
-        <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-start" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <img
             src="./Img/Group 347.png"
             alt="Robotic Surgery"
@@ -743,16 +753,23 @@
           class="w-full md:w-1/2 flex flex-col gap-4 sm:gap-6 text-center md:text-left"
         >
           <!-- Heading -->
-          <h3 class="text-red-700 font-bold underline underline-offset-8">
+          <h3 class="text-red-700 font-bold underline underline-offset-8" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
             What We Do
           </h3>
 
-          <h2 class="text-black font-bold text-2xl md:text-4xl">
+          <h2 class="text-black font-bold text-2xl md:text-4xl" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
             Robotic Surgery Centre
           </h2>
 
           <!-- Description -->
-          <p class="text-[#7F7F7F] text-sm sm:text-base leading-relaxed">
+          <p class="text-[#7F7F7F] text-sm sm:text-base leading-relaxed" data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+         
+          data-aos-duration="1300">
             In early 2022, doctors at MITR hospital in Kharghar decided to
             acquire a robotic system to help their patients with accessing the
             most advanced technology available in surgery at that time. This
@@ -786,7 +803,10 @@
         "
       >
         <!-- Header -->
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
           <p class="text-red-700 font-bold underline underline-offset-8">
             Meet Our Experienced Doctors
           </p>
@@ -797,7 +817,9 @@
 
         <!-- Content -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mx-4 sm:mx-8 px-4 sm:px-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mx-4 sm:mx-8 px-4 sm:px-8" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <!-- Card 1 -->
           <div class="bg-white rounded-xl flex flex-col items-start gap-2 p-6">
@@ -810,11 +832,7 @@
 
           <!-- Card 2 -->
           <div class="bg-white rounded-xl flex flex-col items-start gap-2 p-6">
-            <img
-              src="./Img/Group 351 (1).png"
-              alt="24/7 Trauma"
-              class="w-16"
-            />
+            <img src="./Img/Group 351 (1).png" alt="24/7 Trauma" class="w-16" />
             <p class="font-bold text-lg text-center md:text-left">
               24/7 Trauma & <br />
               Casualty
@@ -866,17 +884,24 @@
               background-position: center;
             "
           >
-            <div class="img">
-              <img src="./Img/Doctor (2).png" alt="" class="w-16" />
-            </div>
-            <h2 class="text-white text-lg md:text-xl font-semibold">
-              Doctor's Team
-            </h2>
-            <p
-              class="bg-[#245B98] px-6 py-1 rounded-lg text-white text-sm md:text-base"
+            <div
+              class="flex flex-col items-center justify-center space-y-2"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
             >
-              25+
-            </p>
+              <div class="img">
+                <img src="./Img/Doctor (2).png" alt="" class="w-16" />
+              </div>
+              <h2 class="text-white text-lg md:text-xl font-semibold">
+                Doctor's Team
+              </h2>
+              <p
+                class="bg-[#245B98] px-6 py-1 rounded-lg text-white text-sm md:text-base"
+              >
+                25+
+              </p>
+            </div>
           </div>
 
           <!-- Card 2 -->
@@ -888,17 +913,22 @@
               background-position: center;
             "
           >
-            <div class="img">
-              <img src="./Img/man.png" alt="" class="w-16" />
+            <div  class="flex flex-col items-center justify-center space-y-2"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" data-aos-delay="1000">
+              <div class="img">
+                <img src="./Img/man.png" alt="" class="w-16" />
+              </div>
+              <h2 class="text-white text-lg md:text-xl font-semibold">
+                Happy Patients
+              </h2>
+              <p
+                class="bg-[#245B98] px-6 py-1 rounded-lg text-white text-sm md:text-base"
+              >
+                73k+
+              </p>
             </div>
-            <h2 class="text-white text-lg md:text-xl font-semibold">
-              Happy Patients
-            </h2>
-            <p
-              class="bg-[#245B98] px-6 py-1 rounded-lg text-white text-sm md:text-base"
-            >
-              73k+
-            </p>
           </div>
 
           <!-- Card 3 -->
@@ -910,17 +940,22 @@
               background-position: center;
             "
           >
-            <div class="img">
-              <img src="./Img/Surgry.png" alt="" class="w-16" />
+            <div  class="flex flex-col items-center justify-center space-y-2"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" data-aos-delay="1400" >
+              <div class="img">
+                <img src="./Img/Surgry.png" alt="" class="w-16" />
+              </div>
+              <h2 class="text-white text-lg md:text-xl font-semibold">
+                Successful Surgeries
+              </h2>
+              <p
+                class="bg-[#245B98] px-6 py-1 rounded-lg text-white text-sm md:text-base"
+              >
+                14k+
+              </p>
             </div>
-            <h2 class="text-white text-lg md:text-xl font-semibold">
-              Successful Surgeries
-            </h2>
-            <p
-              class="bg-[#245B98] px-6 py-1 rounded-lg text-white text-sm md:text-base"
-            >
-              14k+
-            </p>
           </div>
         </div>
       </div>
@@ -940,7 +975,13 @@
               class="flex flex-col md:flex-row gap-14 px-6 md:px-20 items-center justify-around"
             >
               <!-- Left Content -->
-              <div class="w-full md:w-1/2">
+              <div
+                class="w-full md:w-1/2"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+              >
                 <img
                   src="./Img/inside.png"
                   alt=""
@@ -949,7 +990,14 @@
               </div>
 
               <!-- Right Content -->
-              <div class="w-full md:w-1/2 flex flex-col gap-6">
+              <div
+                class="w-full md:w-1/2 flex flex-col gap-6"
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000"
+                dat
+              >
                 <!-- Heading -->
 
                 <div
@@ -1420,5 +1468,29 @@
     </script>
 
     <script src="./js/about.js"></script>
+
+    <!-- WOW.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- WOW.js CDN -->
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Aos script  -->
+    <script>
+      AOS.init({
+        // Optional settings
+        duration: 1000, // animation duration in milliseconds
+        easing: "ease-in-out", // animation easing
+        once: true, // animation will only happen once
+      });
+    </script>
+
+    <!-- jsdeliver js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </body>
 </html>

@@ -27,6 +27,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
 
+     <!-- Animate.css CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- AOS -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
   <!-- tailwind css link -->
 
   <script>
@@ -423,14 +429,17 @@
             </h2>
             <img src="./Img/bottle.png" alt="" class="w-8">
           </div>
-          <div class="leading-relaxed">
+          <div class="leading-relaxed" data-aos="fade-right" data-aos-duration="1000">
             <img src="./Img/facilitird.png" alt="" />
           </div>
         </div>
       </div>
 
       <!-- Right Image Section -->
-      <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end animate__animated animate__fadeIn">
+      <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end " data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
         <img src="./Img/facilities.png" alt="Joint Replacement Surgery" class="max-w-full h-auto" />
       </div>
     </div>
@@ -456,7 +465,7 @@
     <div class="container mx-auto px-4">
 
       <!-- columns-1 -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 "   data-aos="fade-down"  data-aos-druation="1000">
         <!-- Card 1 -->
         <div class="relative group  flex flex-col items-center">
             <img src="./Img/Rectangle 543.png." alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
@@ -509,7 +518,7 @@
       </div>
 
       <!-- columns-2 -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 " data-aos="fade-down"  data-aos-druation="1000">
         <!-- Card 1 -->
         <div class="relative group  flex flex-col items-center">
           <img src="./Img/Rectangle 543 (2).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
@@ -561,7 +570,7 @@
 
 
       <!-- columns-3 -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 " data-aos="fade-down"  data-aos-druation="1000">
         <!-- Card 1 -->
         <div class="relative group  flex flex-col items-center">
           <img src="./Img/Rectangle 543 (5).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
@@ -613,7 +622,7 @@
 
 
       <!-- columns-4 -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 " data-aos="fade-down"  data-aos-druation="1000">
         <!-- Card 1 -->
         <div class="relative group  flex flex-col items-center">
           <img src="./Img/Rectangle 543 (7).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
@@ -665,7 +674,7 @@
 
         <!-- columns-5 -->
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 " data-aos="fade-down"  data-aos-druation="1000">
           <!-- Card 1 -->
           <div class="relative group  flex flex-col items-center">
             <img src="./Img/Rectangle 543 (9).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
@@ -717,7 +726,7 @@
 
           <!-- columns-6 -->
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 " data-aos="fade-down"  data-aos-druation="1000">
         <!-- Card 1 -->
         <div class="relative group  flex flex-col items-center">
           <img src="./Img/Rectangle 543 (12).png" alt="Emergency Department" class="w-full h-56 object-cover rounded-lg">
@@ -773,7 +782,7 @@
           <!-- Quote Icon -->
           <img src="./Img/dots.png" alt="" class="mb-4">
           <!-- Testimonial Text -->
-          <p class="text-lg mb-6 font-roboto">
+          <p class="text-lg mb-6 font-roboto" data-aos="fade-left" data-aos-druation="1000">
             Kharghar’s Best Hospital in Navi Mumbai, a premier hospital with all modern
             technologies, facilities, and specialist doctor’s to make you fit and well-being
             from any kind of health-related issues. Services are very much satisfactory and
@@ -784,7 +793,7 @@
           <!-- Testimonial Author -->
 
           <div class="flex justify-between">
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-druation="1000">
               <img src="./Img/Ellipse 31.png" alt="Karan Dhawan" class="w-12 h-12 rounded-full" />
               <div>
                 <h4 class="font-bold">Karan Dhawan</h4>
@@ -793,7 +802,10 @@
             </div>
 
             <!-- Rating -->
-            <div class="mt-4">
+            <div class="mt-4" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
               <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
               <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
               <span class="text-yellow-400"><i class="fa-solid fa-star"></i></span>
@@ -1062,13 +1074,29 @@
 
 <script src="../js/facilities.js"></script>
 
-  <!-- WOW.js CDN -->
+   <!-- WOW.js CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <!-- WOW.js CDN -->
 <script>
   new WOW().init();
-</script> 
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Aos script  -->
+<script>
+  AOS.init({
+    // Optional settings
+    duration: 1000,  // animation duration in milliseconds
+    easing: 'ease-in-out', // animation easing
+    once: true,  // animation will only happen once
+  });
+</script>
+
+<!-- jsdeliver js -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
 <script>

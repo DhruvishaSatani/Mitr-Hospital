@@ -22,8 +22,10 @@
     rel="stylesheet" />
 
  <!-- Animate.css CDN -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+ <!-- AOS -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
   <!-- tailwind css link -->
 
@@ -442,25 +444,25 @@
       </div>
 
       <div>
-        <div class="grid grid-cols-3 gap-6 mb-6">
-          <div class="animate__animated animate__fadeInDown" style="animation-duration: 2s; animation-delay: 1.25s;"><img src="./Img/m1.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInDown" style="animation-duration: 2s; animation-delay: 1.5s;"><img src="./Img/m2.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInDown" style="animation-duration: 2s; animation-delay: 1.75s;"><img src="./Img/m3.png" alt="" /></div>
+        <div class="grid grid-cols-3 gap-6 mb-6" data-aos="fade-down" data-aos-duration="1000">
+          <div  ><img src="./Img/m1.png" alt="" /></div>
+          <div  ><img src="./Img/m2.png" alt="" /></div>
+          <div  ><img src="./Img/m3.png" alt="" /></div>
         </div>
         <div class="flex gap-6 mb-6">
-          <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 1.75s;"><img src="./Img/m4.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 2s;"><img src="./Img/m5.png" alt="" /></div>
+          <div data-aos="fade-right" data-aos-duration="1000"><img src="./Img/m4.png" alt="" /></div>
+          <div data-aos="fade-left" data-aos-duration="1000"><img src="./Img/m5.png" alt="" /></div>
         </div>
-        <div class="flex gap-6 mb-6">
-          <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m6.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m7.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m8.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m9.png" alt="" /></div>
+        <div class="flex gap-6 mb-6" data-aos="fade-left" data-aos-duration="1000">
+          <div ><img src="./Img/m6.png" alt="" /></div>
+          <div ><img src="./Img/m7.png" alt="" /></div>
+          <div ><img src="./Img/m8.png" alt="" /></div>
+          <div ><img src="./Img/m9.png" alt="" /></div>
         </div>
 
-        <div class="flex gap-6 mb-6">
-          <div class="animate__animated animate__fadeInUp" style="animation-duration: 1.75s; animation-delay: 2.25s;"><img src="./Img/m10.png" alt="" /></div>
-          <div class="animate__animated animate__fadeInUp" style="animation-duration: 1.75s; animation-delay: 2.5s;"><img src="./Img/m11.png" alt="" /></div>
+        <div class="flex gap-6 mb-6"  data-aos="fade-right" data-aos-duration="1000" >
+          <div ><img src="./Img/m10.png" alt="" /></div>
+          <div ><img src="./Img/m11.png" alt="" /></div>
         </div>
       </div>
     </div>
@@ -479,15 +481,15 @@
       </div>
 
       <div class="flex gap-6 mb-6">
-        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay: 0.25s;"><img src="./Img/m6.png" alt="" /></div>
-        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay:0.75s ;"><img src="./Img/m7.png" alt="" /></div>
-        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay: 1s;"><img src="./Img/m8.png" alt="" /></div>
-        <div class="animate__animated animate__fadeInDown " style="animation-duration: 1.75s; animation-delay:1.25s ;"><img src="./Img/m9.png" alt="" /></div>
+        <div  ><img src="./Img/m6.png" alt="" /></div>
+        <div  ><img src="./Img/m7.png" alt="" /></div>
+        <div  ><img src="./Img/m8.png" alt="" /></div>
+        <div  ><img src="./Img/m9.png" alt="" /></div>
       </div>
 
       <div class="flex gap-6 mb-6">
-        <div class="animate__animated animate__fadeInLeft" style="animation-duration: 1.75s; animation-delay: 1.25s;"><img src="./Img/m10.png" alt="" /></div>
-        <div class="animate__animated animate__fadeInRight" style="animation-duration: 1.75s; animation-delay: 1.25s;"><img src="./Img/m11.png" alt="" /></div>
+        <div ><img src="./Img/m10.png" alt="" /></div>
+        <div ><img src="./Img/m11.png" alt="" /></div>
       </div>
     </div>
   
@@ -750,13 +752,29 @@
   </footer>
 
 
-  <!-- WOW.js CDN -->
+ <!-- WOW.js CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <!-- WOW.js CDN -->
 <script>
   new WOW().init();
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Aos script  -->
+<script>
+  AOS.init({
+    // Optional settings
+    duration: 1000,  // animation duration in milliseconds
+    easing: 'ease-in-out', // animation easing
+    once: true,  // animation will only happen once
+  });
+</script>
+
+<!-- jsdeliver js -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
   <script>
