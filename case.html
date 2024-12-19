@@ -65,9 +65,7 @@
       id="main-header"
       class="bg-[#E8F2FF] text-gray-400 shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300"
     >
-      <div
-        class="container mx-auto px-4 py-4 flex items-center justify-between"
-      >
+      <div class="container mx-auto px-4 py-4 flex items-center justify-around">
         <!-- Logo -->
         <div class="text-2xl font-bold">
           <a href="index.html" class="cursor-pointer">
@@ -298,7 +296,7 @@
 
         <!-- Button -->
         <button
-          class="hidden md:block bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-[17px] font-semibold text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+          class="hidden md:block transform-gpu hover:-translate-y-1 hover:shadow-lg transition-transform transition duration-300 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-[17px] font-semibold text-white px-4 py-2 rounded-lg hover:bg-blue-600"
         >
           <a href=".//contact.html"
             >Contact Us <i class="fa-solid fa-arrow-right"></i
@@ -543,48 +541,86 @@
     </header>
 
     <section
-      class="bg-local py-8"
-      style="background-image: url('./Img/about.png')"
+      class="bg-local py-8 bg-cover"
+      style="
+        background-image: url('./Img/about.png');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div
-        class="container mx-auto pt-16 flex flex-col justify-between items-center px-6 lg:flex-row lg:px-20"
+        class="container mx-auto pt-[100px] flex flex-col items-center justify-between px-6 lg:flex-row lg:px-20 lg:pt-20"
       >
         <!-- Left Content -->
         <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
-          <div class="flex flex-col items-center gap-6 justify-end" data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-delay="300"
-          data-aos-offset="0">
-            <div class="flex items-center gap-4">
+          <div class="flex flex-col items-center gap-6 justify-end">
+            <div class="flex space-x-1">
               <h2
-                class="text-[32px] text-[#1B528F] lg:text-4xl font-bold leading-tight"
+                class="text-[24px] text-[#1B528F] lg:text-[32px] font-bold leading-tight"
               >
                 Case Studies
               </h2>
-              <img src="./Img/bottle.png" alt="" class="w-8" />
+
+              <div class="translate-y-[-15px]">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 43 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.1386 22.9505L7.38809 17.7122L4.64248 20.2051L2.44829 17.7635L7.62035 13.0432L13.7653 19.8471L16.0711 22.3579C13.734 26.1855 14.0597 31.2003 17.2107 34.6865C21.0196 38.9133 27.5422 39.2608 31.769 35.4519C35.9807 31.6099 36.3282 25.0873 32.5193 20.8605C29.3684 17.3742 24.4275 16.5456 20.3822 18.4705L18.1095 15.9446L12.0431 9.22507L17.2634 4.52281L19.4576 6.96438L16.712 9.45734L21.384 14.6114C26.1385 13.3637 31.4508 14.7435 34.994 18.6512C40.0102 24.2086 39.5538 32.8623 33.9963 37.8784C28.4057 42.9097 19.7672 42.4864 14.736 36.8958C11.1927 32.9881 10.3752 27.5972 12.1386 22.9505Z"
+                    fill="#1B528F"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.4752 27.3553C21.3444 28.4787 21.1901 32.7918 17.7953 34.3C21.3385 38.2077 27.3578 38.5046 31.2805 34.9945C35.1882 31.4512 35.4851 25.432 31.975 21.5092C31.1568 25.2445 29.5728 26.2471 25.4752 27.3553ZM23.4966 33.4611C24.0459 34.0511 23.9807 34.9614 23.4087 35.4624C22.8186 36.0117 21.9083 35.9465 21.4073 35.3745C20.8912 34.7693 20.9232 33.8742 21.4952 33.3731C22.0853 32.8239 22.9956 32.889 23.4966 33.4611ZM27.7388 34.6885C27.8957 34.857 27.9021 35.1343 27.7155 35.3395C27.5138 35.5115 27.2214 35.4848 27.0493 35.2831C26.8924 35.1145 26.904 34.789 27.1058 34.6169C27.2743 34.46 27.5667 34.4867 27.7388 34.6885ZM25.5098 30.9419C25.6667 31.1105 25.6731 31.3877 25.5045 31.5447C25.3208 31.6685 25.0435 31.6749 24.8866 31.5063C24.7297 31.3377 24.7233 31.0604 24.925 30.8884C25.0936 30.7314 25.3529 30.7733 25.5098 30.9419ZM30.9727 32.213C31.4435 32.7187 31.4143 33.5325 30.8755 34.0184C30.3366 34.5044 29.5408 34.427 29.07 33.9212C28.5841 33.3824 28.6132 32.5686 29.1672 32.1158C29.6729 31.645 30.4867 31.6741 30.9727 32.213ZM29.2069 30.0964C29.3638 30.265 29.3219 30.5242 29.1533 30.6811C28.9848 30.8381 28.7075 30.8445 28.5505 30.6759C28.3936 30.5073 28.4204 30.2149 28.5889 30.058C28.7575 29.901 29.0499 29.9278 29.2069 30.0964ZM30.8783 26.6523C31.2486 26.3234 31.7851 26.3589 32.1141 26.7292C32.4762 27.0844 32.4076 27.636 32.0704 27.9499C31.7001 28.2789 31.1636 28.2434 30.8497 27.9062C30.5208 27.5359 30.5411 26.9662 30.8783 26.6523Z"
+                    fill="#1B528F"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="leading-relaxed"  data-aos="fade-right" data-aos-duration="1000">
-              <div class=" w-96 px-6 h-20 text-[18px] border-y-2 flex space-x-3 items-center justify-center border-r-2 border-[#BBD5F7] rounded-xl bg-gradient-to-r from-[#E8F2FF] to-[#BBD5F7] transform skew-x-[-23deg] skew-y-0"> 
-                <div>Home</div> <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.11344 16.2437L21.7291 18.5325L19.9291 21.6106C19.3828 22.5481 20.5622 23.5294 21.3847 22.825L29.6616 15.7312C29.7667 15.6409 29.8511 15.5289 29.909 15.4029C29.9668 15.2769 29.9968 15.1399 29.9968 15.0012C29.9968 14.8626 29.9668 14.7256 29.909 14.5996C29.8511 14.4736 29.7667 14.3616 29.6616 14.2712L21.3847 7.1775C20.5616 6.46937 19.3828 7.45437 19.9291 8.38812L21.7253 11.47L1.11344 13.7556C-0.365312 13.9156 -0.366563 16.0831 1.11344 16.2437Z" fill="#1B528F"/>
-                  </svg> 
-                  <div>Case Studies</div>
-                    
-             
-          </div>
+            <div
+              class="leading-relaxed"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div
+                class="w-full md:w-96 px-8 h-20 text-[16px] md:text-[18px] border-y-2 flex space-x-3 items-center justify-end border-r-2 border-[#BBD5F7] rounded-xl bg-gradient-to-r from-[#E8F2FF] to-[#BBD5F7] transform skew-x-[-23deg] skew-y-0"
+              >
+                <div>Home</div>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.11344 16.2437L21.7291 18.5325L19.9291 21.6106C19.3828 22.5481 20.5622 23.5294 21.3847 22.825L29.6616 15.7312C29.7667 15.6409 29.8511 15.5289 29.909 15.4029C29.9668 15.2769 29.9968 15.1399 29.9968 15.0012C29.9968 14.8626 29.9668 14.7256 29.909 14.5996C29.8511 14.4736 29.7667 14.3616 29.6616 14.2712L21.3847 7.1775C20.5616 6.46937 19.3828 7.45437 19.9291 8.38812L21.7253 11.47L1.11344 13.7556C-0.365312 13.9156 -0.366563 16.0831 1.11344 16.2437Z"
+                    fill="#1B528F"
+                  />
+                </svg>
+                <div>Case Studies</div>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Right Image Section -->
-        <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0">
+        <div
+          class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <img
             src="./Img/case-head.png"
-            alt="Joint Replacement Surgery"
-            class="max-w-full h-auto"
+            alt="Team"
+            class="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[400px] h-auto"
           />
         </div>
       </div>
@@ -596,7 +632,11 @@
         class="flex flex-col md:flex-row gap-10 px-6 md:px-20 items-center justify-around"
       >
         <!-- Left Content -->
-        <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          class="w-full md:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <img
             src="./Img/case-studies.png"
             alt=""
@@ -605,8 +645,11 @@
         </div>
 
         <!-- Right Content -->
-        <div class="w-full md:w-1/2 flex flex-col gap-6"   data-aos="fade-up"
-        data-aos-duration="1000">
+        <div
+          class="w-full md:w-1/2 flex flex-col gap-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <!-- Heading -->
           <div
             class="text-red-700 font-bold underline underline-offset-8 text-center md:text-left"
@@ -619,7 +662,11 @@
             <h2>Adenomyosis</h2>
           </div>
           <!-- Description -->
-          <div class="text-[#7F7F7F] text-center md:text-left text-sm md:text-base"  data-aos="fade-right" data-aos-duration="1000" >
+          <div
+            class="text-[#7F7F7F] text-center md:text-left text-sm md:text-base"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             Mrs Y 45 yr old housewife came with menstrual complaints of recent
             origin.She gave a history of prolonged menstrual cycle with
             dysmenorrhoea and clots.She had similar menstrual complaints in the
@@ -701,27 +748,31 @@
         </div>
       </div>
     </div>
-
-    <!-- Footer -->
+   
+    <!-- footer  -->
     <footer
       invisible
       group-hover:visible
-      class="text-[#AEE5FF] py-10 px-4 md:px-12 bg-local bg-left-bottom"
+      class="text-[#AEE5FF] py-8 px-4 md:px-12 bg-local bg-left-bottom"
       style="background-image: url('./Img/Footer-img.jpg')"
     >
-      <div class="container mx-auto px-14">
+      <div class="container mx-auto">
         <div class="flex flex-wrap justify-between">
           <!-- Logo and Contact Info -->
           <div class="w-full md:w-1/3 mb-8 md:mb-0">
-            <img
-              src="./Img/logo.png"
-              alt="MITR Hospital"
-              class="mb-4 w-16 md:w-20"
-            />
-            <a class="mb-4 md:pr-10 text-sm md:text-base cursor-pointer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-              nulla risus. Morbi in tellus eget ligula hendrerit vehicula.
-            </a>
+            <div
+              class="flex flex-col items-center lg:items-start lg:text-left text-center"
+            >
+              <img
+                src="./Img/logo.png"
+                alt="MITR Hospital"
+                class="mb-4 w-16 md:w-20"
+              />
+              <a class="mb-4 md:pr-10 text-sm md:text-base cursor-pointer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                nulla risus. Morbi in tellus eget ligula hendrerit vehicula.
+              </a>
+            </div>
             <div class="flex items-center gap-2 my-3">
               <img src="./Img/Call.png" alt="" class="w-5" />
               <p>
@@ -941,7 +992,7 @@
                   <i
                     class="fa-solid group-hover:text-[#AEE5FF] fa-heart-pulse text-white text-lg pr-2"
                   ></i
-                  >Menstrual Irregularities
+                  >Menstrual Irregularitiess
                 </li>
                 <li
                   class="cursor-pointer group hover:text-[#AEE5FF] text-white"
@@ -1092,34 +1143,73 @@
                 <img src="./Img/Line 11.png" alt="" class="mb-2" />
                 <div class="flex gap-4">
                   <div class="bg-[#2C63A0] p-2 rounded-full">
-                    <svg width="25" height="25" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white">
-                      <path d="M8.58005 11.04H6.60005C6.28005 11.04 6.18005 10.92 6.18005 10.62V8.20002C6.18005 7.88002 6.30005 7.78002 6.60005 7.78002H8.58005V6.02002C8.58005 5.22002 8.72005 4.46002 9.12005 3.76002C9.54005 3.04002 10.1401 2.56002 10.9001 2.28002C11.4001 2.10002 11.9001 2.02002 12.4401 2.02002H14.4001C14.6801 2.02002 14.8001 2.14002 14.8001 2.42002V4.70002C14.8001 4.98002 14.6801 5.10002 14.4001 5.10002C13.8601 5.10002 13.3201 5.10002 12.7801 5.12002C12.2401 5.12002 11.9601 5.38002 11.9601 5.94002C11.9401 6.54002 11.9601 7.12002 11.9601 7.74002H14.2801C14.6001 7.74002 14.7201 7.86002 14.7201 8.18002V10.6C14.7201 10.92 14.6201 11.02 14.2801 11.02H11.9601V17.54C11.9601 17.88 11.8601 18 11.5001 18H9.00005C8.70005 18 8.58005 17.88 8.58005 17.58V11.04Z" fill="white"/>
-                      </svg>
-                      
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 21 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-white"
+                    >
+                      <path
+                        d="M8.58005 11.04H6.60005C6.28005 11.04 6.18005 10.92 6.18005 10.62V8.20002C6.18005 7.88002 6.30005 7.78002 6.60005 7.78002H8.58005V6.02002C8.58005 5.22002 8.72005 4.46002 9.12005 3.76002C9.54005 3.04002 10.1401 2.56002 10.9001 2.28002C11.4001 2.10002 11.9001 2.02002 12.4401 2.02002H14.4001C14.6801 2.02002 14.8001 2.14002 14.8001 2.42002V4.70002C14.8001 4.98002 14.6801 5.10002 14.4001 5.10002C13.8601 5.10002 13.3201 5.10002 12.7801 5.12002C12.2401 5.12002 11.9601 5.38002 11.9601 5.94002C11.9401 6.54002 11.9601 7.12002 11.9601 7.74002H14.2801C14.6001 7.74002 14.7201 7.86002 14.7201 8.18002V10.6C14.7201 10.92 14.6201 11.02 14.2801 11.02H11.9601V17.54C11.9601 17.88 11.8601 18 11.5001 18H9.00005C8.70005 18 8.58005 17.88 8.58005 17.58V11.04Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                   <div class="bg-[#2C63A0] p-2 rounded-full">
-                    <svg width="25" height="25" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white">
-                      <circle cx="17.5" cy="17.5" r="17" fill="#255C99" stroke="#2C63A0"/>
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 35 35"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-white"
+                    >
+                      <circle
+                        cx="17.5"
+                        cy="17.5"
+                        r="17"
+                        fill="#255C99"
+                        stroke="#2C63A0"
+                      />
                       <g clip-path="url(#clip0_1054_40336)">
-                      <path d="M22.7324 12.3306C22.4915 12.3306 22.2954 12.5266 22.2954 12.7676C22.2954 13.0085 22.4915 13.2046 22.7324 13.2046C22.9734 13.2046 23.1694 13.0085 23.1694 12.7676C23.1694 12.5266 22.9734 12.3306 22.7324 12.3306ZM17.5001 14.1258C15.3639 14.1258 13.626 15.8637 13.626 17.9999C13.626 20.1361 15.3639 21.874 17.5001 21.874C19.6363 21.874 21.3742 20.1361 21.3742 17.9999C21.3742 15.8638 19.6363 14.1258 17.5001 14.1258Z" fill="white"/>
-                      <path d="M21.5656 9H13.4344C10.7136 9 8.5 11.2136 8.5 13.9345V22.0656C8.5 24.7865 10.7136 27 13.4344 27H21.5656C24.2865 27 26.5 24.7864 26.5 22.0656V13.9345C26.5 11.2136 24.2865 9 21.5656 9ZM17.5 22.9371C14.7777 22.9371 12.563 20.7223 12.563 18C12.563 15.2777 14.7777 13.063 17.5 13.063C20.2223 13.063 22.4371 15.2777 22.4371 18C22.4371 20.7223 20.2223 22.9371 17.5 22.9371ZM22.7323 14.2677C21.9053 14.2677 21.2324 13.5948 21.2324 12.7677C21.2324 11.9406 21.9053 11.2677 22.7323 11.2677C23.5594 11.2677 24.2323 11.9406 24.2323 12.7677C24.2323 13.5947 23.5594 14.2677 22.7323 14.2677Z" fill="white"/>
+                        <path
+                          d="M22.7324 12.3306C22.4915 12.3306 22.2954 12.5266 22.2954 12.7676C22.2954 13.0085 22.4915 13.2046 22.7324 13.2046C22.9734 13.2046 23.1694 13.0085 23.1694 12.7676C23.1694 12.5266 22.9734 12.3306 22.7324 12.3306ZM17.5001 14.1258C15.3639 14.1258 13.626 15.8637 13.626 17.9999C13.626 20.1361 15.3639 21.874 17.5001 21.874C19.6363 21.874 21.3742 20.1361 21.3742 17.9999C21.3742 15.8638 19.6363 14.1258 17.5001 14.1258Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M21.5656 9H13.4344C10.7136 9 8.5 11.2136 8.5 13.9345V22.0656C8.5 24.7865 10.7136 27 13.4344 27H21.5656C24.2865 27 26.5 24.7864 26.5 22.0656V13.9345C26.5 11.2136 24.2865 9 21.5656 9ZM17.5 22.9371C14.7777 22.9371 12.563 20.7223 12.563 18C12.563 15.2777 14.7777 13.063 17.5 13.063C20.2223 13.063 22.4371 15.2777 22.4371 18C22.4371 20.7223 20.2223 22.9371 17.5 22.9371ZM22.7323 14.2677C21.9053 14.2677 21.2324 13.5948 21.2324 12.7677C21.2324 11.9406 21.9053 11.2677 22.7323 11.2677C23.5594 11.2677 24.2323 11.9406 24.2323 12.7677C24.2323 13.5947 23.5594 14.2677 22.7323 14.2677Z"
+                          fill="white"
+                        />
                       </g>
                       <defs>
-                      <clipPath id="clip0_1054_40336">
-                      <rect width="18" height="18" fill="white" transform="translate(8.5 9)"/>
-                      </clipPath>
+                        <clipPath id="clip0_1054_40336">
+                          <rect
+                            width="18"
+                            height="18"
+                            fill="white"
+                            transform="translate(8.5 9)"
+                          />
+                        </clipPath>
                       </defs>
-                      </svg>
-                      
-                      
+                    </svg>
                   </div>
 
                   <div class="bg-[#2C63A0] p-2 rounded-full">
-                    <svg width="25" height="25" viewBox="0 0 19 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white">
-                      <path d="M18.3637 2.38575C18.1476 1.58249 17.5142 0.949297 16.7111 0.732998C15.2439 0.331543 9.37476 0.331543 9.37476 0.331543C9.37476 0.331543 3.5059 0.331543 2.03865 0.717793C1.25095 0.933857 0.602197 1.58264 0.386133 2.38575C0 3.85288 0 6.89556 0 6.89556C0 6.89556 0 9.95354 0.386133 11.4053C0.602402 12.2085 1.23551 12.8417 2.03877 13.058C3.52134 13.4595 9.375 13.4595 9.375 13.4595C9.375 13.4595 15.2439 13.4595 16.7111 13.0733C17.5144 12.8571 18.1476 12.2239 18.3639 11.4208C18.7499 9.95351 18.7499 6.91097 18.7499 6.91097C18.7499 6.91097 18.7653 3.85285 18.3637 2.38575ZM7.50615 9.70645V4.08459L12.3866 6.8955L7.50615 9.70645Z" fill="white"/>
-                      </svg>
-                      
-                      
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 19 14"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-white"
+                    >
+                      <path
+                        d="M18.3637 2.38575C18.1476 1.58249 17.5142 0.949297 16.7111 0.732998C15.2439 0.331543 9.37476 0.331543 9.37476 0.331543C9.37476 0.331543 3.5059 0.331543 2.03865 0.717793C1.25095 0.933857 0.602197 1.58264 0.386133 2.38575C0 3.85288 0 6.89556 0 6.89556C0 6.89556 0 9.95354 0.386133 11.4053C0.602402 12.2085 1.23551 12.8417 2.03877 13.058C3.52134 13.4595 9.375 13.4595 9.375 13.4595C9.375 13.4595 15.2439 13.4595 16.7111 13.0733C17.5144 12.8571 18.1476 12.2239 18.3639 11.4208C18.7499 9.95351 18.7499 6.91097 18.7499 6.91097C18.7499 6.91097 18.7653 3.85285 18.3637 2.38575ZM7.50615 9.70645V4.08459L12.3866 6.8955L7.50615 9.70645Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -1127,8 +1217,13 @@
           </div>
         </div>
 
+        <div
+          class="flex flex-col items-center text-center justify-center text-[12px] lg:text-[16px]"
+        >
+          <p>Copyright 2024 @ All rights reserved with MITR Hospital</p>
+        </div>
         <!-- Scroll to Top Button -->
-        <div id="scrollToTop" class="fixed bottom-[76px] right-[50px]">
+        <div id="scrollToTop" class="fixed bottom-[76px] right-[70px]">
           <button
             onclick="scrollToTop()"
             class="bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
@@ -1153,7 +1248,6 @@
         </div>
       </div>
     </footer>
-
 
     <script src="./js/case.js"></script>
     <!-- WOW.js CDN -->
