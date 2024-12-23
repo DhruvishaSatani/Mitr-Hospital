@@ -21,6 +21,36 @@ document.addEventListener("DOMContentLoaded", () => {
 // ---------------------------Doctor Curosal ---------------------------------------- 
 
 
+// --------------------------------------doctor carousel --------------------------------------
+
+const carousel = document.getElementById("carousel");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let scrollAmount = 0; // Tracks the scroll position
+
+// Adjust the scroll amount based on the card width
+const cardWidth = carousel.firstElementChild.offsetWidth + 28; // Add space-x-7 value (28px)
+
+// Scroll to the previous card
+prevBtn.addEventListener("click", () => {
+  scrollAmount -= cardWidth;
+  carousel.style.transform = `translateX(${-scrollAmount}px)`;
+});
+
+// Scroll to the next card
+nextBtn.addEventListener("click", () => {
+  scrollAmount += cardWidth;
+  carousel.style.transform = `translateX(${-scrollAmount}px)`;
+});
+
+// Prevent overscrolling at edges
+carousel.addEventListener("transitionend", () => {
+  const totalScroll = carousel.scrollWidth - carousel.offsetWidth;
+  if (scrollAmount < 0) scrollAmount = 0;
+  if (scrollAmount > totalScroll) scrollAmount = totalScroll;
+});
+
 
 
 
