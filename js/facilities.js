@@ -19,3 +19,35 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+// te<!-- Testimonials  carousel-->
+
+
+const slider = document.getElementById("carousel");
+let currentIndex = 0;
+
+// Get the total number of slides
+const totalSlides = slider.children.length;
+
+// Buttons
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+
+// Navigate to a specific slide
+function goToSlide(index) {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Previous Button Handler
+prevButton.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  goToSlide(currentIndex);
+});
+
+// Next Button Handler
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) ;
+  goToSlide(currentIndex);
+});
+
+

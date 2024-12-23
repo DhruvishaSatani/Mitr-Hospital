@@ -657,247 +657,255 @@
     </div>
 
     <!-- COntact  Form -->
-    <div class="flex justify-center items-center min-h-screen">
-      <div class="bg-white rounded-md w-full max-w-4xl p-8">
-        <div
-          class="flex flex-col md:flex-row md:justify-between gap-6"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-        >
-          <!-- Contact Info Section -->
-          <div
-            class="bg-local bg-no-repeat bg-right-bottom rounded-xl p-6 w-full md:w-1/3"
-            style="background-image: url('./Img/contact-bg.png')"
-          >
-            <h2 class="text-xl text-white font-bold mb-2 font-semibold">
-              Contact Info
-            </h2>
-            <p class="text-sm mb-4 pr-2 text-white">
-              Have Questions Or Need Assistance? Reach Out To Us And We'll Be
-              Happy To Help!
-            </p>
-            <hr />
-            <!-- bottom list  -->
-
-            <div class="flex flex-col">
-              <div class="content mt-4">
-                <div class="flex gap-2 items-center">
-                  <div class="icon">
-                    <img src="./Img/Call.png" alt="" />
-                  </div>
-                  <span class="text-white font-semibold">Phone:</span>
-                </div>
-                <p class="text-sm flex items-center mb-2 text-white ml-10">
-                  9004290790
-                </p>
-              </div>
-
-              <div class="content mt-4">
-                <div class="flex gap-2 items-center">
-                  <div class="icon">
-                    <img src="./Img/time (2).png" alt="" />
-                  </div>
-                  <span class="text-white font-semibold">Timing:</span>
-                </div>
-                <p class="text-sm flex items-center mb-2 text-white ml-10">
-                  24x7 Open For All Emergencies
-                </p>
-              </div>
-
-              <div class="content mt-4">
-                <div class="flex gap-2 items-center">
-                  <div class="icon">
-                    <img src="./Img/mail (2).png" alt="" />
-                  </div>
-                  <span class="text-white font-semibold">Email:</span>
-                </div>
-                <a class="text-sm flex items-center mb-2 text-white ml-10">
-                  frontdesk@mithospital.com</a
+     <section>
+         <div class="container mx-auto px-4">
+          <div class="flex justify-center items-center min-h-screen">
+            <div class="bg-white rounded-md w-full max-w-4xl p-5">
+              <div
+                class="flex flex-col md:flex-row md:justify-between gap-6"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                <!-- Contact Info Section -->
+                <div
+                  class="bg-local bg-[#1B528F] bg-no-repeat bg-right-bottom rounded-xl p-6 w-full md:w-1/3"
+                  style="background-image: url('./Img/contact-bg.png')"
                 >
+                  <h2 class="text-xl text-white font-bold mb-2 font-semibold">
+                    Contact Info
+                  </h2>
+                  <p class="text-sm mb-4 pr-2 text-white">
+                    Have Questions Or Need Assistance? Reach Out To Us And We'll Be
+                    Happy To Help!
+                  </p>
+                  <hr />
+                  <!-- bottom list  -->
+      
+                  <div class="flex flex-col">
+                    <div class="content mt-4">
+                      <div class="flex gap-2 items-start">
+                        <div class="icon">
+                          <img src="./Img/Call.png" alt="" />
+                        </div>
+                        <span class="text-white font-semibold">Phone:</span>
+                      </div>
+                      <p class="text-sm flex items-center mb-2 text-white ml-10">
+                        9004290790
+                      </p>
+                    </div>
+      
+                    <div class="content mt-4">
+                      <div class="flex gap-2 items-start">
+                        <div class="icon">
+                          <img src="./Img/time (2).png" alt="" />
+                        </div>
+                        <span class="text-white font-semibold">Timing:</span>
+                      </div>
+                      <p class="text-sm flex items-center mb-2 text-white ml-10">
+                        24x7 Open For All Emergencies
+                      </p>
+                    </div>
+      
+                    <div class="content mt-4">
+                      <div class="flex gap-2 items-start">
+                        <div class="icon">
+                          <img src="./Img/mail (2).png" alt="" />
+                        </div>
+                        <span class="text-white font-semibold">Email:</span>
+                      </div>
+                      <a class="text-sm flex items-center mb-2 text-white ml-10">
+                        frontdesk@mithospital.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Form Section -->
+                <div class="w-full md:w-2/3">
+                  <form id="contactForm" class="space-y-4">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                      <div class="flex-1">
+                        <label for="name" class="text-sm font-medium text-gray-600"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="Your Name"
+                          class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          required
+                        />
+                      </div>
+                      <div class="flex-1">
+                        <label for="email" class="text-sm font-medium text-gray-600"
+                          >Email</label
+                        >
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="Your Email"
+                          class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                      <div class="flex-1">
+                        <label for="phone" class="text-sm font-medium text-gray-600"
+                          >Phone</label
+                        >
+                        <input
+                          type="tel"
+                          id="phone"
+                          placeholder="+91 XXXXX XXXXX"
+                          class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                      <div class="flex-1">
+                        <label
+                          for="department"
+                          class="text-sm font-medium text-gray-600"
+                          >Department</label
+                        >
+                        <input
+                          type="text"
+                          id="department"
+                          placeholder="Enter Department"
+                          class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label for="message" class="text-sm font-medium text-gray-600"
+                        >How can I help?</label
+                      >
+                      <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Feel free to get in touch"
+                        class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      ></textarea>
+                    </div>
+                    <div>
+                      <label class="flex items-center text-sm">
+                        <input type="checkbox" id="agree" class="mr-2" required /> I
+                        agree that my submitted data is collected and stored.
+                      </label>
+                    </div>
+                    <div>
+                      <button
+                        type="submit"
+                        class="mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
+                      >
+                        Submit Us <i class="fa-solid fa-arrow-right ml-2"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Form Section -->
-          <div class="w-full md:w-2/3">
-            <form id="contactForm" class="space-y-4">
-              <div class="flex flex-col sm:flex-row gap-4">
-                <div class="flex-1">
-                  <label for="name" class="text-sm font-medium text-gray-600"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Your Name"
-                    class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  />
-                </div>
-                <div class="flex-1">
-                  <label for="email" class="text-sm font-medium text-gray-600"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email"
-                    class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex flex-col sm:flex-row gap-4">
-                <div class="flex-1">
-                  <label for="phone" class="text-sm font-medium text-gray-600"
-                    >Phone</label
-                  >
-                  <input
-                    type="tel"
-                    id="phone"
-                    placeholder="+91 XXXXX XXXXX"
-                    class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                </div>
-                <div class="flex-1">
-                  <label
-                    for="department"
-                    class="text-sm font-medium text-gray-600"
-                    >Department</label
-                  >
-                  <input
-                    type="text"
-                    id="department"
-                    placeholder="Enter Department"
-                    class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                </div>
-              </div>
-              <div>
-                <label for="message" class="text-sm font-medium text-gray-600"
-                  >How can I help?</label
-                >
-                <textarea
-                  id="message"
-                  rows="4"
-                  placeholder="Feel free to get in touch"
-                  class="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                ></textarea>
-              </div>
-              <div>
-                <label class="flex items-center text-sm">
-                  <input type="checkbox" id="agree" class="mr-2" required /> I
-                  agree that my submitted data is collected and stored.
-                </label>
-              </div>
-              <div>
-                <button
-                  type="submit"
-                  class="mt-6 bg-gradient-to-r from-[#1B528F] to-[#2886AE] text-sm lg:text-base font-semibold text-white px-6 py-3 rounded-lg focus:outline-none"
-                >
-                  Submit Us <i class="fa-solid fa-arrow-right ml-2"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+         </div>
+     </section>
 
     <!-- Map Section -->
-    <div class="max-w-6xl mx-auto">
-      <div class="relative pb-10">
-        <!-- Map -->
-        <div
-          class="aspect-w-16 aspect-h-12"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <iframe
-            class="w-full h-[500px] rounded-lg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8584558417853!2d73.07078091535268!3d19.037546487116246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79544c5e5d3cf%3A0x1b8ef19f2b63b3af!2sMITR%20Hospital!5e0!3m2!1sen!2sin!4v1639988022729!5m2!1sen!2sin"
-            frameborder="0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-      </div>
-
-      <!-- Address Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 mb-8">
-        <!-- Address 1 -->
-        <div
-          class="bg-[#1B528F] text-white p-4 shadow rounded-lg"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="flex gap-3">
-            <img
-              src="./Img/location.png"
-              alt=""
-              data-aos="zoom-in"
-              data-aos-duration="800"
-            />
-            <h3
-              class="text-lg font-semibold text-white"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              Hospital Address
-            </h3>
+     <section class="">
+          <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+              <div class="relative pb-10 p-5">
+                <!-- Map -->
+                <div
+                  class="aspect-w-16 aspect-h-12"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <iframe
+                    class="w-full h-[500px] rounded-lg"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8584558417853!2d73.07078091535268!3d19.037546487116246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79544c5e5d3cf%3A0x1b8ef19f2b63b3af!2sMITR%20Hospital!5e0!3m2!1sen!2sin!4v1639988022729!5m2!1sen!2sin"
+                    frameborder="0"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                  ></iframe>
+                </div>
+              </div>
+        
+              <!-- Address Cards -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 mx-3 mb-8">
+                <!-- Address 1 -->
+                <div
+                  class="bg-[#1B528F] text-white p-4 shadow rounded-lg"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <div class="flex gap-3">
+                    <img
+                      src="./Img/location.png"
+                      alt=""
+                      data-aos="zoom-in"
+                      data-aos-duration="800"
+                    />
+                    <h3
+                      class="text-lg font-semibold text-white"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                    >
+                      Hospital Address
+                    </h3>
+                  </div>
+                  <p
+                    class="ml-4 text-white px-6"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    Plot:37, Eden Gardens, opposite Harmony International School,<br />
+                    Sector-5, Kharghar, Navi Mumbai, Maharashtra 410210
+                  </p>
+                </div>
+        
+                <!-- Address 2 -->
+                <div
+                  class="bg-[#1B528F] text-white p-4 shadow rounded-lg wow animate__fadeInUp"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <div class="flex gap-3">
+                    <img src="./Img/location.png" alt="" />
+                    <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
+                  </div>
+                  <p
+                    class="ml-4 text-white pt-2"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    C1/8, Ground Floor, Opposite Green City,<br />
+                    Vashi, Navi Mumbai, Maharashtra 400703
+                  </p>
+                </div>
+        
+                <!-- Address 3 -->
+                <div
+                  class="bg-[#1B528F] text-white p-4 shadow rounded-lg wow animate__fadeInRight"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <div class="flex gap-3">
+                    <img src="./Img/location.png" alt="" />
+                    <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
+                  </div>
+                  <p
+                    class="ml-4 text-white pt-2"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    310, 3rd floor, Nms Icon, Sector 19, Ulwe,<br />
+                    Navi Mumbai, Maharashtra 410206
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p
-            class="ml-4 text-white px-6"
-            data-aos="fade-left"
-            data-aos-duration="1200"
-          >
-            Plot:37, Eden Gardens, opposite Harmony International School,<br />
-            Sector-5, Kharghar, Navi Mumbai, Maharashtra 410210
-          </p>
-        </div>
-
-        <!-- Address 2 -->
-        <div
-          class="bg-[#1B528F] text-white p-4 shadow rounded-lg wow animate__fadeInUp"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="flex gap-3">
-            <img src="./Img/location.png" alt="" />
-            <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
-          </div>
-          <p
-            class="ml-4 text-white pt-2"
-            data-aos="fade-left"
-            data-aos-duration="1200"
-          >
-            C1/8, Ground Floor, Opposite Green City,<br />
-            Vashi, Navi Mumbai, Maharashtra 400703
-          </p>
-        </div>
-
-        <!-- Address 3 -->
-        <div
-          class="bg-[#1B528F] text-white p-4 shadow rounded-lg wow animate__fadeInRight"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="flex gap-3">
-            <img src="./Img/location.png" alt="" />
-            <h3 class="text-lg font-semibold text-white">Hospital Address</h3>
-          </div>
-          <p
-            class="ml-4 text-white pt-2"
-            data-aos="fade-left"
-            data-aos-duration="1200"
-          >
-            310, 3rd floor, Nms Icon, Sector 19, Ulwe,<br />
-            Navi Mumbai, Maharashtra 410206
-          </p>
-        </div>
-      </div>
-    </div>
+     </section>
 
     <!-- footer  -->
     <footer

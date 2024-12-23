@@ -18,10 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ---------------------------Doctor Curosal ---------------------------------------- 
+
+
+
+
 
 // <!-- Testimonials -->
 
-const slider = document.getElementById("slider");
+// te<!-- Testimonials  carousel-->
+
+
+const slider = document.getElementById("carousel");
 let currentIndex = 0;
 
 // Get the total number of slides
@@ -44,9 +52,11 @@ prevButton.addEventListener("click", () => {
 
 // Next Button Handler
 nextButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % totalSlides;
+  currentIndex = (currentIndex + 1) ;
   goToSlide(currentIndex);
 });
+
+
 
 
 
