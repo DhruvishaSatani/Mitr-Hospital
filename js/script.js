@@ -54,8 +54,6 @@ carousel.addEventListener("transitionend", () => {
 
 
 
-// <!-- Testimonials -->
-
 // te<!-- Testimonials  carousel-->
 
 
